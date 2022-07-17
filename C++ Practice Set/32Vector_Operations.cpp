@@ -1,9 +1,19 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-int main(int argc, char const *argv[])
+
+void print_v(vector<int> &v2)
 {
 
+    for (int i = 0; i < v2.size(); ++i)
+    {
+        cout << v2[i] << " ";
+    }
+    cout << endl;
+}
+int main(int argc, char const *argv[])
+{
+    /*// Initialization of Vectors
     vector<int> v = {4, 8, 7, 9, 6};
     for (int i = 0; i < v.size(); ++i)
     {
@@ -25,10 +35,10 @@ int main(int argc, char const *argv[])
 
     for (int value : v1)
     {
-        cout << value << " ";
+        cout << value << " "; // It will make copy of vector
     }
     cout << endl;
-    for (int &value : v1)
+    for (int &value : v1) // By including reference& ,we can get dynamic values
     {
         value++;
         cout << value << " ";
@@ -36,9 +46,21 @@ int main(int argc, char const *argv[])
     cout << endl;
     for (int value : v1)
     {
-        cout << value.third << " ";
+        cout << value << " ";
     }
     cout << endl;
+    */
+    // Vector reference and copy
 
+    vector<int> v2;
+    v2.push_back(4);
+    v2.push_back(7);
+    print_v(v2);
+
+    vector<int> v3 =v2;
+    v2.push_back(1);
+    print_v(v2);
+    v3.push_back(9);
+    print_v(v3);
     return 0;
 }
