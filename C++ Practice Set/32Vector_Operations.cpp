@@ -23,7 +23,7 @@ void print_pair(vector<pair<int, int>> v4)
 }
 int main(int argc, char const *argv[])
 {
-    // Initialization of Vectors
+   /* // Initialization of Vectors
     vector<int> v = {4, 8, 7, 9, 6};
     for (int i = 0; i < v.size(); ++i)
     {
@@ -93,7 +93,7 @@ int main(int argc, char const *argv[])
     cout << endl;
     cout << "Display Vector Pairs : " << endl;
     print_pair(v5);
-
+*/
     // Array of Vectors and Vector of vector
     int N;
     cout << "N" << endl;
