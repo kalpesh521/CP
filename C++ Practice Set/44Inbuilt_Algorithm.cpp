@@ -3,10 +3,10 @@
 using namespace std;
 int main()
 {
-    int n;
+    /*int n;
     cin >> n;
     vector<int> v(n);
-     for (int i = 0; i < n; ++i)
+    for (int i = 0; i < n; ++i)
     {
         cin >> v[i];
     }
@@ -34,8 +34,25 @@ int main()
         cout << val << endl;
     }
 
-string s="kalpesh";
-reverse(s.begin(),s.end());
-cout<<s<<endl;
+    string s = "kalpesh";
+    reverse(s.begin(), s.end());
+    cout << s << endl;
+    */
+    vector<int> v1 = {1, 2, 3, 5, 7};
+
+    cout << binary_search(v1.begin(), v1.end(), 3) << endl; // Output 1
+    cout << binary_search(v1.begin(), v1.end(), 6) << endl; // Output 0
+
+    sort(v1.begin(), v1.end(), greater<int>()); // Sort in descending order
+    for (auto val : v1)
+    {
+        cout << val << endl;
+    }
+
+    vector<string> v2 = {"s", "kp", "kpp", "sp"};
+    for (auto val : v2)
+    {
+        cout << val << endl;
+    }
     return 0;
 }
