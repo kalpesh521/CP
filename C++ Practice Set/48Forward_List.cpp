@@ -29,8 +29,8 @@ int main(int argc, char const *argv[])
     {
         cout << val << " ";
     }
-cout<<endl;
-    fl2.splice_after(fl2.begin(),fl1);
+    cout << endl;
+    fl2.splice_after(fl2.begin(), fl1);
     for (auto val : fl2)
     {
         cout << val << " ";

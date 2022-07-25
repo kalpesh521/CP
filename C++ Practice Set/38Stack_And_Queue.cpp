@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-
+ // Container Adapter
     stack<int> s;
     s.push(2);
     s.push(3);
@@ -26,8 +26,8 @@ int main()
     }
 
     cout << endl;
-    priority_queue<int> pq;
-    priority_queue<int,vector<int>,greater<int>> pq2;
+    priority_queue<int> pq;                             // max-heap decreasing order
+    priority_queue<int, vector<int>, greater<int>> pq2; // min-heap increasing order
 
     pq.push(5);
     pq.push(19);
@@ -43,21 +43,21 @@ int main()
     cout << pq.size() << endl;
     cout << pq2.size() << endl;
 
-cout<<endl;
-while (!pq.empty())
-{
-    
-    cout<<pq.top()<<endl;
-    pq.pop();
-}
-cout<<endl;
+    cout << endl;
+    while (!pq.empty())
+    {
 
-while (!pq2.empty())
-{
-    
-    cout<<pq2.top()<<endl;
-    pq2.pop();
-}
+        cout << pq.top() << endl;
+        pq.pop();
+    }
+    cout << endl;
+
+    while (!pq2.empty())
+    {
+
+        cout << pq2.top() << endl;
+        pq2.pop();
+    }
 
     return 0;
 }

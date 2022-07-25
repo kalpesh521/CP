@@ -3,34 +3,32 @@ using namespace std;
 #include <vector>
 
 int main(int argc, char const *argv[])
-{ /*
+{
 
- // Using array
- Lower Bound : returns itself if matches otherwise greater than that value from  sorted array
- Upper Bound : returns next greater value from sorted array
-     int n;
-     cin >> n;
-     int a[n];
-     for (int i = 0; i < n; ++i)
-     {
-         cin >> a[i];
-     }
-     sort(a, a + n);
-     cout << "Sorted Array is" << endl;
-     for (int i = 0; i < n; ++i)
-     {
-         cout << a[i] << endl;
-     }
+    // Using array
+    Lower Bound : returns itself if matches otherwise greater than that value from sorted array
+                      Upper Bound : returns next greater value from sorted array int n;
+    cin >> n;
+    int a[n];
+    for (int i = 0; i < n; ++i)
+    {
+        cin >> a[i];
+    }
+    sort(a, a + n);
+    cout << "Sorted Array is" << endl;
+    for (int i = 0; i < n; ++i)
+    {
+        cout << a[i] << endl;
+    }
 
-     int *ptr = lower_bound(a, a + n, 15);
-     if (ptr == (a + n))
-     {
-         cout << "Not found" << endl;
-         return 0;
-     }
+    int *ptr = lower_bound(a, a + n, 15); // log(n)
+    if (ptr == (a + n))
+    {
+        cout << "Not found" << endl;
+        return 0;
+    }
 
-     cout <<"Lower Bound is "<< *ptr << endl;
-
+    cout << "Lower Bound is " << *ptr << endl;
 
     // Using Vector
     int n;
@@ -40,7 +38,7 @@ int main(int argc, char const *argv[])
     {
         cin >> a[i];
     }
-    sort(a.begin(), a.end());
+    sort(a.begin(), a.end()); // log(n)
     cout << "Sorted Array is" << endl;
     for (int i = 0; i < n; ++i)
     {
@@ -55,11 +53,13 @@ int main(int argc, char const *argv[])
         return 0;
     }
 
-    cout << "Lower Bound is " << *it << endl;*/
+    cout << "Lower Bound is " << *it << endl;
+
+    // Using Set
     int n;
     cin >> n;
     set<int> s;
-    for (int i = 0; i < n; ++i)
+    for (int i = 0; i < n; ++i) // O(n)
     {
         int x;
         cin >> x;

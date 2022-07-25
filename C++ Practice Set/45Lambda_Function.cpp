@@ -20,6 +20,7 @@ int main(int argc, char const *argv[])
     cout << "any of"<<any_of(v.begin(), v.end(), [](int x){ return x > 0; })<<endl;
     cout << "none of"<<none_of(v.begin(), v.end(), [](int x){ return x > 0; })<<endl;
 
+    //iota -> Consecutive numbers
     int arr[6]={0};
     iota(arr,arr+6,10);
     for ( int i = 0; i <  6; i++)

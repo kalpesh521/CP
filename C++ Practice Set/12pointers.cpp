@@ -6,12 +6,15 @@ int main()
     int a = 25;
     int *b; // for value of address
     b = &a; // address
+
     // address of variable
     cout << "address of a is " << &a << endl;
     cout << "address of a is " << b << endl; // b= &a
 
     // * --> value of address
     cout << "The value at address of a is " << *b << endl; // pointer *b
+
+    cout << endl;
 
     // pointer to pointer
     cout << "Poiner to Pointer " << endl;

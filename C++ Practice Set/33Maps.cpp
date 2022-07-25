@@ -16,7 +16,8 @@ void print_map(map<string, int> &m1)
     }
 }
 int main(int argc, char const *argv[])
-{ // Red Black  trees
+{   // Red Black  trees
+    // uses Keys and Values
     map<int, string> m;
     m[1] = "kp"; // O(log(n))
     m[3] = "sp";

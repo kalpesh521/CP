@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #include <list>
 using namespace std;
-
+// List -> Doubly Linkedlist -->Points to both ends
 showlist(list<int> ls)
 {
     for (auto val : ls)
@@ -21,12 +21,15 @@ int main(int argc, char const *argv[])
     cout << endl;
     ls2.pop_front();
     showlist(ls2);
-    cout<<endl;
-cout<<ls2.front()<<endl;
-cout<<ls2.back()<<endl;
-ls2.reverse();
-showlist(ls2);
-ls2.sort();
-showlist(ls1);
+
+    cout << endl;
+    cout << ls2.front() << endl;
+    cout << ls2.back() << endl;
+
+    ls2.reverse();
+    showlist(ls2);
+
+    ls2.sort();
+    showlist(ls1);
     return 0;
 }

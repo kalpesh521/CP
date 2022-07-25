@@ -56,9 +56,7 @@ Sample Output
 
 25 -1
 
-Explanation
-
-See p*/
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -96,7 +94,7 @@ int main(int argc, char const *argv[])
     vector<int> nge = NGE(v);
     for (int i = 0; i < n; ++i)
     {
-        cout << v[i] << " " << (nge[i]== -1 ? -1 : v[nge[i]] )<< endl;
+        cout << v[i] << " " << (nge[i] == -1 ? -1 : v[nge[i]]) << endl;
     }
 
     return 0;

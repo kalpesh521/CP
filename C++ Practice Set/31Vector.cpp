@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
         vec1.push_back(element); // Add element at end
     }
 
-    / vec1.pop_back(); // Delete element at last
+    vec1.pop_back(); // Delete element at last
     display(vec1);
 
     vector<int>::iterator iter = vec1.begin(); // Replace by auto keyword

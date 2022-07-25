@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    /*int n;
+    int n;
     cin >> n;
     vector<int> v(n);
     for (int i = 0; i < n; ++i)
@@ -37,7 +37,7 @@ int main()
     string s = "kalpesh";
     reverse(s.begin(), s.end());
     cout << s << endl;
-    */
+
     vector<int> v1 = {1, 2, 3, 5, 7};
 
     cout << binary_search(v1.begin(), v1.end(), 3) << endl; // Output 1
@@ -50,7 +50,7 @@ int main()
     }
 
     vector<string> v2 = {"s", "kp", "kpp", "sp"};
-    for (auto val : v2)
+    for (auto val : v2) // String sort by alphabetical order and string length
     {
         cout << val << endl;
     }

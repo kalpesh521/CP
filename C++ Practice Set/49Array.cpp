@@ -36,16 +36,16 @@ int main(int argc, char const *argv[])
     p[2] = 28;
     p[3] = 24;
     p[4] = 12;
-q = new int[10];
+    q = new int[10];
 
     for (int i = 0; i < 5; i++)
     {
-        q[i] = p[i];
-       }
-        delete[] p;
-        p = q;
-        q = NULL;
-    
+        q[i] = p[i]; // Copy of pointer array
+    }
+    delete[] p; // delete p
+    p = q;
+    q = NULL;
+
     for (int i = 0; i < 5; i++)
     {
         cout << p[i] << endl;
