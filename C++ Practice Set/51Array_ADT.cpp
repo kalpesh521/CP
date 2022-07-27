@@ -32,7 +32,7 @@ void insert(struct Array *arr, int index, int x)
     arr->length++;
 }
 
-int Delete (struct Array *arr, int index)
+int Delete(struct Array *arr, int index)
 {
     int x = 0;
     int i;
@@ -48,14 +48,38 @@ int Delete (struct Array *arr, int index)
     }
     return 0;
 }
- 
+
+void swap(int *x, int *y)
+{
+    int temp;
+    temp = *x;
+    *x = *y;
+    *y = temp;
+}
+int LinearSearch(struct Array *arr, int key)
+{
+    int i;
+    for (i = 0; i < arr->length; i++)
+    {
+
+        if (key == arr->A[i])
+        {
+           // swap(&arr->A[i], &arr->A[i - 1]); //Transposition
+            swap(&arr->A[i], &arr->A[0]); //Move to Front 
+            return i;
+        }
+    }
+    return -1;
+}
 int main(int argc, char const *argv[])
 {
 
     struct Array arr = {{1, 23, 4, 5, 6, 7}, 10, 6};
     // Append(&arr, 10);
     // insert(&arr, 3, 6);
-    Delete(&arr, 0);
+    // Delete(&arr, 0);
+    cout << LinearSearch(&arr, 7) << endl;
+    cout << "Display  Array" << endl;
     Display(arr);
 
     return 0;
