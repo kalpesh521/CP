@@ -252,29 +252,54 @@ void Rearange(struct Array *arr)
         }
     }
 }
+
+struct Array *Merge(struct Array *arr1, struct Array *arr2)
+{
+    int i, j, k;
+    i = j = k = 0;
+    struct Array *arr3 = (struct Array *)malloc(sizeof(struct
+                                                       Array));
+    while (i < arr1->length && j < arr2->length)
+    {
+        if (arr1->A[i] < arr2->A[j])
+            arr3->A[k++] = arr1->A[i++];
+        else
+            arr3->A[k++] = arr2->A[j++];
+    }
+    for (; i < arr1->length; i++)
+        arr3->A[k++] = arr1->A[i];
+    for (; j < arr2->length; j++)
+        arr3->A[k++] = arr2->A[j];
+    arr3->length = arr1->length + arr2->length;
+    arr3->size = 10;
+    return arr3;
+}
 int main(int argc, char const *argv[])
 {
 
-    //  struct Array arr = {{1, 23, 4, 5, 6, 7}, 10, 6};
-    struct Array arr = {{1, -2, 4, -5, 6, -9}, 10, 6}; // Sorted Array
-    // Append(&arr, 10);
-    // insert(&arr, 3, 6);
-    // Delete(&arr, 0);
-    // cout << LinearSearch(&arr, 7) << endl;
-    // cout << BinarySearch(arr, 5) << endl;
-    // cout << RecBinSearch(arr.A, 0, arr.length, 4) << endl;
-    // cout << "Display  Array" << endl;
-    // cout<<Get(arr, 4)<<endl;
-    // Set(&arr, 4, 25);
-    // cout << Max(arr) << endl;
-    // cout << Min(arr) << endl;
-    // cout << Sum(arr) << endl;
-    // cout << Avg(arr) << endl;
-    // Reverse2(&arr);
-    // InsertEle(&arr, 8);
-    //cout << isSorted(arr) << endl;
-    Rearange(&arr);
-    Display(arr);
+    struct Array arr1 = {{3, 6, 14, 15, 16, 17}, 10, 6};
+    struct Array arr2 = {{1, 4, 5, 8, 9, 16}, 10, 6};
+    struct Array *arr3;
+    // struct Array arr1 = {{1, -2, 4, -5, 6, -9}, 10, 6}; // Sorted Array
+    //  Append(&arr, 10);
+    //  insert(&arr, 3, 6);
+    //  Delete(&arr, 0);
+    //  cout << LinearSearch(&arr, 7) << endl;
+    //  cout << BinarySearch(arr, 5) << endl;
+    //  cout << RecBinSearch(arr.A, 0, arr.length, 4) << endl;
+    //  cout << "Display  Array" << endl;
+    //  cout<<Get(arr, 4)<<endl;
+    //  Set(&arr, 4, 25);
+    //  cout << Max(arr) << endl;
+    //  cout << Min(arr) << endl;
+    //  cout << Sum(arr) << endl;
+    //  cout << Avg(arr) << endl;
+    //  Reverse2(&arr);
+    //  InsertEle(&arr, 8);
+    //  cout << isSorted(arr) << endl;
+    // Rearange(&arr);
+    arr3 = Merge(&arr1, &arr2);
+    Display(*arr3);
 
     return 0;
 }
