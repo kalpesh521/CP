@@ -11,7 +11,7 @@ void Display(struct Array arr)
 {
     for (int i = 0; i < arr.length; i++)
     {
-        cout << arr.A[i] << endl;
+        cout << arr.A[i] << " ";
     }
 }
 void Append(struct Array *arr, int x)
@@ -117,6 +117,66 @@ int RecBinSearch(int a[], int l, int h, int key)
     }
     return -1;
 }
+
+int Get(struct Array arr, int index)
+{
+    if (index >= 0 && index < arr.length)
+    {
+        return arr.A[index];
+    }
+    return -1;
+}
+
+void Set(struct Array *arr, int index, int x)
+{
+    if (index >= 0 && index < arr->length)
+    {
+        arr->A[index] = x;
+    }
+}
+
+int Max(struct Array arr)
+{
+    int max =arr.A[0] ;
+    int i;
+    for (i = 1; i < arr.length; i++)
+    {
+        if (arr.A[i] > max)
+        {
+            max = arr.A[i];
+        }
+    }
+    return max;
+}
+int Min(struct Array arr)
+{
+    int min = arr.A[0];
+    int i;
+    for (i = 1; i < arr.length; i++)
+    {
+        if (arr.A[i] < min)
+        {
+            min = arr.A[i];
+        }
+    }
+    return min;
+}
+
+int Sum(struct Array arr)
+{
+    int s = 0;
+    int i;
+    for (i = 0; i < arr.length; i++)
+    {
+        s += arr.A[i];
+    }
+    return s;
+}
+
+float Avg(struct Array arr)
+{
+    return (float)Sum(arr) / arr.length;
+}
 int main(int argc, char const *argv[])
 {
 
@@ -126,8 +186,14 @@ int main(int argc, char const *argv[])
     // Delete(&arr, 0);
     // cout << LinearSearch(&arr, 7) << endl;
     // cout << BinarySearch(arr, 5) << endl;
-    cout << RecBinSearch(arr.A, 0, arr.length, 4) << endl;
-    cout << "Display  Array" << endl;
+    // cout << RecBinSearch(arr.A, 0, arr.length, 4) << endl;
+    // cout << "Display  Array" << endl;
+    // cout<<Get(arr, 4)<<endl;
+    //Set(&arr, 4, 25);
+    cout << Max(arr) << endl;
+    cout << Min(arr) << endl;
+    cout<<Sum(arr)<<endl;
+    cout<<Avg(arr)<<endl;
     Display(arr);
 
     return 0;
