@@ -274,11 +274,93 @@ struct Array *Merge(struct Array *arr1, struct Array *arr2)
     arr3->size = 10;
     return arr3;
 }
+struct Array *Union(struct Array *arr1, struct Array *arr2)
+{
+    int i, j, k;
+    i = j = k = 0;
+    struct Array *arr3 = (struct Array *)malloc(sizeof(struct
+                                                       Array));
+    while (i < arr1->length && j < arr2->length)
+    {
+        if (arr1->A[i] < arr2->A[j])
+            arr3->A[k++] = arr1->A[i++];
+        else if (arr1->A[i] > arr2->A[j])
+            arr3->A[k++] = arr2->A[j++];
+        else
+        {
+            arr3->A[k++] = arr1->A[i];
+            j++;
+        }
+    }
+    for (; i < arr1->length; i++)
+        arr3->A[k++] = arr1->A[i];
+    for (; j < arr2->length; j++)
+        arr3->A[k++] = arr2->A[j];
+    arr3->length = k;
+    // arr3->length = arr1->length + arr2->length;
+    arr3->size = 10;
+    return arr3;
+}
+struct Array *Intersection(struct Array *arr1, struct Array *arr2)
+{
+    int i, j, k;
+    i = j = k = 0;
+    struct Array *arr3 = (struct Array *)malloc(sizeof(struct
+                                                       Array));
+    while (i < arr1->length && j < arr2->length)
+    {
+        if (arr1->A[i] < arr2->A[j])
+            i++;
+        else if (arr2->A[j] < arr1->A[i])
+            j++;
+        else if (arr1->A[i] == arr2->A[j])
+        {
+
+            arr3->A[k++] = arr1->A[i++];
+            j++;
+        }
+    }
+    for (; i < arr1->length; i++)
+        arr3->A[k++] = arr1->A[i];
+    for (; j < arr2->length; j++)
+        arr3->A[k++] = arr2->A[j];
+    arr3->length = k;
+    // arr3->length = arr1->length + arr2->length;
+    arr3->size = 10;
+    return arr3;
+}
+struct Array *Difference(struct Array *arr1, struct Array *arr2)
+{
+    int i, j, k;
+    i = j = k = 0;
+    struct Array *arr3 = (struct Array *)malloc(sizeof(struct
+                                                       Array));
+    while (i < arr1->length && j < arr2->length)
+    {
+        if (arr1->A[i] < arr2->A[j])
+            arr3->A[k++]=arr1->A[i++];
+        else if (arr2->A[j] < arr1->A[i])
+            j++;
+        else if (arr1->A[i] == arr2->A[j])
+        {
+
+            i++;
+            j++;
+        }
+    }
+    for (; i < arr1->length; i++)
+        arr3->A[k++] = arr1->A[i];
+    
+    arr3->length = k;
+    // arr3->length = arr1->length + arr2->length;
+    arr3->size = 10;
+    return arr3;
+}
 int main(int argc, char const *argv[])
 {
 
-    struct Array arr1 = {{3, 6, 14, 15, 16, 17}, 10, 6};
-    struct Array arr2 = {{1, 4, 5, 8, 9, 16}, 10, 6};
+    struct Array arr1 = {{3, 6, 14, 15, 16, 218}, 10, 6};
+    struct Array arr2 = {{1, 4, 5, 6, 9, 16}, 10, 6};
     struct Array *arr3;
     // struct Array arr1 = {{1, -2, 4, -5, 6, -9}, 10, 6}; // Sorted Array
     //  Append(&arr, 10);
@@ -298,7 +380,10 @@ int main(int argc, char const *argv[])
     //  InsertEle(&arr, 8);
     //  cout << isSorted(arr) << endl;
     // Rearange(&arr);
-    arr3 = Merge(&arr1, &arr2);
+    // arr3 = Merge(&arr1, &arr2); // To Merge Array Should be sorted
+    // arr3 = Union(&arr1, &arr2);
+   // arr3 = Intersection(&arr1, &arr2);
+    arr3 = Difference(&arr1, &arr2);
     Display(*arr3);
 
     return 0;
