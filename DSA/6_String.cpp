@@ -40,7 +40,7 @@ int main(int argc, char const *argv[])
    }
    cout<<A<<" ";
    */
-
+/*
     char A[] = "How are you";
     int i, vcount = 0, ccount = 0;
 
@@ -60,6 +60,7 @@ int main(int argc, char const *argv[])
     cout << "Consonant count in string " << endl;
     cout << ccount << endl;
 
+    // Validate a String
     int word = 1;
     for (int i = 0; A[i] != '\0'; i++)
     {
@@ -81,5 +82,21 @@ int main(int argc, char const *argv[])
     {
         cout << "Invalid string" << endl;
     }
+*/
+    // Reversing a String
+
+    char A[] = "Table";
+    char B[7];
+    int i,j;
+    for (i = 0; A[i] != '\0'; i++)
+    {
+    }
+    i--;
+    for (j = 0; i >= 0; i--, j++)
+    {
+        B[j] = A[i];
+    }
+    B[j] = '\0';
+    cout << B << " ";
     return 0;
 }
