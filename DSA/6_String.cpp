@@ -40,54 +40,54 @@ int main(int argc, char const *argv[])
    }
    cout<<A<<" ";
    */
-/*
-    char A[] = "How are you";
-    int i, vcount = 0, ccount = 0;
+    /*
+        char A[] = "How are you";
+        int i, vcount = 0, ccount = 0;
 
-    for (int i = 0; A[i] != '\0'; i++)
-    {
-        if (A[i] == 'a' || A[i] == 'e' || A[i] == 'E' || A[i] == 'A' || A[i] == 'O' || A[i] == 'o')
+        for (int i = 0; A[i] != '\0'; i++)
         {
-            vcount++;
+            if (A[i] == 'a' || A[i] == 'e' || A[i] == 'E' || A[i] == 'A' || A[i] == 'O' || A[i] == 'o')
+            {
+                vcount++;
+            }
+            else if ((A[i] >= 65 && A[i] <= 90) || (A[i] >= 90 && A[i] <= 122))
+            {
+                ccount++;
+            }
         }
-        else if ((A[i] >= 65 && A[i] <= 90) || (A[i] >= 90 && A[i] <= 122))
-        {
-            ccount++;
-        }
-    }
-    cout << "Vowel Count in String " << endl;
-    cout << vcount << endl;
-    cout << "Consonant count in string " << endl;
-    cout << ccount << endl;
+        cout << "Vowel Count in String " << endl;
+        cout << vcount << endl;
+        cout << "Consonant count in string " << endl;
+        cout << ccount << endl;
 
-    // Validate a String
-    int word = 1;
-    for (int i = 0; A[i] != '\0'; i++)
-    {
-        if (A[i] == ' ' && A[i - 1] != ' ')
+        // Validate a String
+        int word = 1;
+        for (int i = 0; A[i] != '\0'; i++)
         {
-            word++;
+            if (A[i] == ' ' && A[i - 1] != ' ')
+            {
+                word++;
+            }
         }
-    }
-    cout << "Total Word in sentence are " << endl;
-    cout << word;
+        cout << "Total Word in sentence are " << endl;
+        cout << word;
 
-    char *name = "kp@!125";
-    if (valid(name))
-    {
-        cout << "Valid String" << endl;
-        ;
-    }
-    else
-    {
-        cout << "Invalid string" << endl;
-    }
-*/
+        char *name = "kp@!125";
+        if (valid(name))
+        {
+            cout << "Valid String" << endl;
+            ;
+        }
+        else
+        {
+            cout << "Invalid string" << endl;
+        }
+
     // Reversing a String
 
     char A[] = "Table";
-    char B[7];
-    int i,j;
+    char B[7]; //
+    int i, j;
     for (i = 0; A[i] != '\0'; i++)
     {
     }
@@ -98,5 +98,53 @@ int main(int argc, char const *argv[])
     }
     B[j] = '\0';
     cout << B << " ";
+
+    // Compairaing String
+    char A[] = "painter";
+    char B[] = "painting";
+
+    int i, j;
+    for (i = 0, j = 0; A[i] != '\0' && B[j] != '\0'; i++, j++)
+    {
+        A[i] != B[j];
+        break;
+    }
+    if (A[i] == B[j])
+    {
+        cout << "Equal" << endl;
+    }
+    else if (A[i] < B[j])
+    {
+        cout << "Small" << endl;
+    }
+    else
+    {
+        cout << "Greater" << endl;
+    }*/
+
+    // Check Pallindrome or not
+
+    char A[] = "madan";
+    char B[5];
+    int i, j;
+    for ( i = 0; A[i] != '\0'; i++)
+    {
+    }
+    i--;
+    for (j = 0; i >= 0;  i--,j++)
+    {
+        B[j] = A[i];
+    }
+    B[j] ='\0';
+    cout<<B<<endl;
+    if (A[i] == B[j])
+    {
+        cout << "String id pallindrome" << endl;
+    }
+    else
+    {
+        cout << "String is not pallindrome" << endl;
+    }
+
     return 0;
 }
