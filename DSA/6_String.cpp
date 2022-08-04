@@ -120,11 +120,11 @@ int main(int argc, char const *argv[])
     else
     {
         cout << "Greater" << endl;
-    }*/
+    }
 
     // Check Pallindrome or not
 
-    char A[] = "madan";
+    char A[] = "madam";
     char B[5];
     int i, j;
     for ( i = 0; A[i] != '\0'; i++)
@@ -144,6 +144,29 @@ int main(int argc, char const *argv[])
     else
     {
         cout << "String is not pallindrome" << endl;
+    }
+*/
+    char A[] = "medical";
+    char B[] = "dmmimal";
+    int H[26]={0};
+    int i;
+    for (i = 0; A[i] != '\0'; i++)
+    {
+        H[A[i] - 97] += 1;
+    }
+    for (i = 0; B[i] != '\0'; i++)
+    {
+        H[A[i] - 97] -= 1;
+
+        if (H[A[i] - 97] < 0)
+        {
+            cout << "String is not anagram" << endl;
+            break;
+        }
+    }
+    if (B[i] == '\0')
+    {
+        cout << "String is anagram" << endl;
     }
 
     return 0;
