@@ -11,6 +11,31 @@ int valid(char *name)
     }
     return 1;
 }
+void swap(char *x, char *y)
+{
+    char temp;
+    temp = *x;
+    *x = *y;
+    *y = temp;
+}
+void perm(char s[], int l, int h)
+{
+    int i;
+
+    if (l == h)
+    {
+        cout << s << endl;
+    }
+    else
+    {
+        for (int i = l; l <= h; i++)
+        {
+            swap(s[l], s[i]);
+            perm(s, l + 1, h);
+            swap(s[l], s[i]);
+        }
+    }
+}
 int main(int argc, char const *argv[])
 {
     /*
@@ -145,7 +170,7 @@ int main(int argc, char const *argv[])
     {
         cout << "String is not pallindrome" << endl;
     }
-*/
+
     char A[] = "medical";
     char B[] = "dmmimal";
     int H[26]={0};
@@ -158,7 +183,7 @@ int main(int argc, char const *argv[])
     {
         H[A[i] - 97] -= 1;
 
-        if (H[A[i] - 97] < 0)
+        if (H[A[i] - 97] < 0) //-1 ->not angram
         {
             cout << "String is not anagram" << endl;
             break;
@@ -168,6 +193,9 @@ int main(int argc, char const *argv[])
     {
         cout << "String is anagram" << endl;
     }
+*/
 
+    char s[] = "abc";
+    perm(s, 0, 2);
     return 0;
 }
