@@ -30,9 +30,9 @@ void perm(char s[], int l, int h)
     {
         for (int i = l; l <= h; i++)
         {
-            swap(s[l], s[i]);
+            swap(&s[l], &s[i]);
             perm(s, l + 1, h);
-            swap(s[l], s[i]);
+            swap(&s[l], &s[i]);
         }
     }
 }
