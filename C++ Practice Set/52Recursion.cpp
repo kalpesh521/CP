@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Head Recursion
 void fun1(int n)
 {
     if (n > 0)
@@ -9,22 +10,70 @@ void fun1(int n)
         cout << n << " ";
     }
 }
-//int x=0; // Global Variable
-int fun2(int n)
-{   static int x=0;
+
+// Tail Recursion
+void fun2(int n)
+{
     if (n > 0)
-    {   x++;
-        return fun2(n - 1) + x;
+    {
+
+        cout << n << " ";
+        fun2(n - 1);
+    }
+}
+
+// int x=0; // Global Variable
+int fun3(int n)
+{
+    static int x = 0; // Static Variable
+    if (n > 0)
+    {
+        x++;
+        return fun3(n - 1) + x;
     }
     return 0;
+}
+
+// Tree Recursion
+void fun4(int n)
+{
+    if (n > 0)
+    {
+        cout << n << " ";
+        fun4(n - 1);
+        fun4(n - 1);
+    }
+}
+void funB(int n);
+void funA(int n)
+{
+    if (n > 0)
+    {
+        cout << n << " ";
+        funB(n - 1);
+    }
+}
+void funB(int n)
+{
+    if (n > 1)
+    {
+        cout << n << " ";
+        funA(n / 2);
+    }
 }
 int main(int argc, char const *argv[])
 {
 
-    int x = 5;
-    int y = 5;
+    int x = 3;
+    int y = 3;
     fun1(x);
     cout << endl;
-    cout << fun2(y);
+    fun2(x);
+    cout << endl;
+    cout << fun3(y);
+    cout << endl;
+    fun4(x);
+    cout << endl;
+    funA(20);
     return 0;
 }
