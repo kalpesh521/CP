@@ -44,6 +44,8 @@ void fun4(int n)
         fun4(n - 1);
     }
 }
+
+//Indirect Recursion
 void funB(int n);
 void funA(int n)
 {
@@ -61,6 +63,15 @@ void funB(int n)
         funA(n / 2);
     }
 }
+
+//Nested recursion
+int fun5(int n){
+    if(n>100){
+        return n-10;
+    }else{
+        return fun5(fun5(n+11));
+    }
+}
 int main(int argc, char const *argv[])
 {
 
@@ -75,5 +86,7 @@ int main(int argc, char const *argv[])
     fun4(x);
     cout << endl;
     funA(20);
+    cout<<endl;
+    cout<<fun5(95);
     return 0;
 }
