@@ -10,58 +10,56 @@ int printBit(int num)
     cout << endl;
 }
 int main(int argc, char const *argv[])
-{ /*
-     printBit(9);
-     int a = 9; // 1001
-     int i = 3;
+{
+    printBit(9);
+    int a = 9; // 1001
+    int i = 3;
 
-     // Check ith bit is set (1) or unset (0)
-     if (a & (1 << i) != 0)
-     {
-         cout << "Set Bit " << endl;
-     }
-     else
-     {
-         cout << "Not set bit" << endl;
-     }
+    // Check ith bit is set (1) or unset (0)
+    if (a & (1 << i) != 0)
+    {
+        cout << "Set Bit " << endl;
+    }
+    else
+    {
+        cout << "Not set bit" << endl;
+    }
 
-     // Set Bit of ith position
-     printBit(a | (1 << i));
+    // Set Bit of ith position
+    printBit(a | (1 << i));
 
-     printBit(~a);        // tilda to reverse bits
-     printBit(1 << 3);    // 00001000
-     printBit(~(1 << 3)); // 11110111
-     // Unset ith position
+    printBit(~a);        // tilda to reverse bits
+    printBit(1 << 3);    // 00001000
+    printBit(~(1 << 3)); // 11110111
+    // Unset ith position
 
-     printBit(a & ~(1 << i));
+    printBit(a & ~(1 << i));
 
-     // toggle
-     printBit(a ^ (1 << 3));
+    // toggle
+    printBit(a ^ (1 << 3));
 
-     // Count set bits
-     cout << __builtin_popcount(a); //For int
-     cout << __builtin_popcountll(a); //For long long
+    // Count set bits
+    cout << __builtin_popcount(a);   // For int
+    cout << __builtin_popcountll(a); // For long long
 
-
-   //Print the 8-bit binary number is odd or even
-     for (int i = 0; i < 8; i++)
-     {
-         printBit(i);
-         if (i & 1)
-         {
-             cout << "Odd" << endl;
-         }
-         else
-         {
-             cout << "Even" << endl;
-         }
-     }
+    // Print the 8-bit binary number is odd or even
+    for (int i = 0; i < 8; i++)
+    {
+        printBit(i);
+        if (i & 1)
+        {
+            cout << "Odd" << endl;
+        }
+        else
+        {
+            cout << "Even" << endl;
+        }
+    }
     // Divide /Multiply by 2
-    int n=5;
-    cout<<(n<<1)<<endl;//Left shift multiply by 2
-    cout<<(n>>1)<<endl;//Right shift divide by two
-     return 0;
- */
+    int n = 5;
+    cout << (n << 1) << endl; // Left shift multiply by 2
+    cout << (n >> 1) << endl; // Right shift divide by two
+    return 0;
 
     // Uppercase to lowercase unset(0) in uppercase
 
@@ -101,7 +99,7 @@ int main(int argc, char const *argv[])
 
     // Check power of 2
 
-    //int l = 15;
+    // int l = 15;
     int l = 16;
     if (l & (l - 1))
     {

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <bits/stdc++.h>
 using namespace std;
- 
+
 void Merge(int A[], int l, int mid, int h)
 {
     int i = l, j = mid + 1, k = l;
@@ -39,21 +39,21 @@ void IMergeSort(int A[], int n)
 }
 int main()
 {
-   // int A[] = {11, 13, 7, 12, 16, 9, 24, 5, 10, 3}, n = 10, i;
+    // int A[] = {11, 13, 7, 12, 16, 9, 24, 5, 10, 3}, n = 10, i;
     int i;
-   int n=10;
+    int n = 10;
     int A[10];
     printf("Enter input");
     for (i = 0; i < 10; i++)
-       // printf("%d ", A[i]);
-       cin>>A[i];
+        // printf("%d ", A[i]);
+        cin >> A[i];
 
-       for ( int n = 0; i <n  ; ++n)
-       {
-       cout<<A[n];
-       }
-       
-        IMergeSort(A, n);
+    for (int n = 0; i < n; ++n)
+    {
+        cout << A[n];
+    }
+
+    IMergeSort(A[i], n);
     printf("\n");
     return 0;
 }

@@ -31,5 +31,6 @@ int main(int argc, char const *argv[])
     cout << sum;
 
     cout << endl;
-    cout << rec_sum(10) ;return 0;
+    cout << rec_sum(10);
+    return 0;
 }
