@@ -46,8 +46,9 @@ void Diagonal::Display()
         for (int j = 1; j <= n; j++)
         {
             if (i == j)
-                cout << A[i - 1] <<" ";
-            else cout<< "0 ";
+                cout << A[i - 1] << " ";
+            else
+                cout << "0 ";
         }
         cout << endl;
     }
@@ -55,20 +56,20 @@ void Diagonal::Display()
 
 int main()
 {
-    int d;
-    cout << "Enter Dimensions";
-    cin >> d;
-    Diagonal dm(d);
+
+    Diagonal dm(4);
     int x;
-    cout << "Enter All Elements";
-    for (int i = 1; i <= d; i++)
-    {
-        for (int j = 1; j <= d; j++)
-        {
-            cin >> x;
-            dm.Set(i, j, x);
-        }
-    }
+
+    dm.Set(1, 1, 4);
+    dm.Set(2, 2, 8);
+    dm.Set(3, 3, 7);
+    dm.Set(4, 4, 14);
+
     dm.Display();
+    cout << endl;
+
+    cout<<dm.Get(1, 1);
+    cout << endl;
+    cout<<dm.Get(2, 1);
     return 0;
 }
