@@ -14,12 +14,12 @@ public:
         n = 2;
         A = new int[2];
     }
-    Diagonal(int n)
+    Diagonal(int n)//Parameterised Constructor
     {
         this->n = n;
         A = new int[n];
     }
-    ~Diagonal()
+    ~Diagonal()//Destructor
     {
         delete[] A;
     }
