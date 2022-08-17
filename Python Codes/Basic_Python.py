@@ -99,12 +99,74 @@ print(out)
 out = [num**2 for num in s]
 print(out)
 #%%
+#Function
 def square(num):
     return num*num
 
 print(square(3))
 
 def id(name):
-    print("Hello "+name)
+    print("Welcome "+name)
     
 id('kalpesh')
+
+
+#%%
+#Map
+n=['India','US','SA','WI']
+print(list(map(square,seq)))
+print(list(map(id,n)))
+#%%
+#Lambda Function
+print(list(map(lambda num:num**3,seq)))
+#Filter
+print(list(filter(lambda n:n%2 ==0,seq)))
+#%%
+
+#Methods
+test="India is my country #India"
+print(test.split())
+print(test.split('#'))
+print(test.split('#')[1])
+print(test.lower())
+print(test.upper())
+
+print('x' in ['x','y','z'])
+
+tup=((1,2),(4,5),(7,8))
+for (a,b) in tup:
+    print(a)
+    print(b)
+    
+#%%
+print(7**4)
+
+#%%
+def countdog(s):
+    count=0
+    for word in s.lower().split():
+        if word =='dog':
+            count+=1
+    return count
+        
+print(countdog("This dog runs faster yhan other dog"))
+
+print("===============")
+#Find the words from the list which start with s
+st=['solid','sachin','cricket','hello','sehwag']
+print(list(filter(lambda word:word[0]=='s',st)))
+
+def caught_speeding(speed,is_birthday):
+    if (is_birthday):
+        speeding=speed-5
+    else:
+        speeding=speed
+    if speeding >80:
+        return "Big ticket"
+    elif speeding >60:
+        return "Small tiket"
+    else:
+        return "No ticket"
+    
+print(caught_speeding(81,True))
+print(caught_speeding(81,False))
