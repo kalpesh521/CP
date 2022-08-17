@@ -1,4 +1,4 @@
- # %%
+# %%
 from re import L
 
 
@@ -68,3 +68,43 @@ elif (4==4):
     print("Right")
 else :
     print("False")
+    
+#%%
+seq=[1,2,3,4,5]
+for i in seq:
+    #print(i)
+    print('kp')
+    
+#%%
+list(range(10))
+print(list)
+#%%
+for i in range(0,10):
+    print(i)
+#%%
+i=2
+while(i<=10):
+    print("i is {}".format(i))
+    i+=2
+    
+#%%
+s=[1,2,3,4,5]
+out=[]
+for num in s:
+    out.append(num**2)
+    
+print(out)
+
+#METHOD 2 
+out = [num**2 for num in s]
+print(out)
+#%%
+def square(num):
+    return num*num
+
+print(square(3))
+
+def id(name):
+    print("Hello "+name)
+    
+id('kalpesh')
