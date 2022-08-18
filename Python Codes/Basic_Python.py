@@ -1,16 +1,26 @@
 # %%
-from re import L
-
-
 age= 21
 name = "virat"
 print("My name is {one} , age is {two} and roll number is {two}".format(one=name,two=age))
-
+print(id(age))
+print(type(age))
 # %%
 #indexing
 x="India is my country"
 x
+y='this is india\'s flag' #\ strings are immutable in python
+print(y)
+print(y[-1])
 
+#complex
+i=3
+j=4
+print(complex(i,j))
+k=6+7j
+print(type(k))
+
+#range
+print(list(range(2,11,2)))
 # %%
 x[0:]
 
