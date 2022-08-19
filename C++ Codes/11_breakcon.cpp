@@ -10,9 +10,9 @@ int main()
         if (i % 2 == 0)
         {
             cout << "Even Number" << " ";
+            continue;
             cout << i << endl;
 
-            continue;
         }
     }
 
