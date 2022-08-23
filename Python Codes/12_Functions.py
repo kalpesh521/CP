@@ -1,5 +1,3 @@
-from unittest import result
-
 
 def add_sub(x,y):
     c=x+y
@@ -87,3 +85,13 @@ def fib(n):
          b=c
          print(c)
 fib(n)
+#%% 
+#Factorial 
+def fact(n):
+    a=1
+    for i in range(1,n+1):
+        a =a*i
+    return a
+x=5
+result=fact(x)
+print(result)
