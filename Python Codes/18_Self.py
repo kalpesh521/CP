@@ -1,3 +1,5 @@
+#self points to all object and return value for which function called
+
 class Computer:
     def __init__(self) :
         self.name="Virat"
@@ -7,8 +9,6 @@ class Computer:
             return True
         else:
             return False
-        
-
 c1=Computer()
 c2=Computer()
 c1.age=30

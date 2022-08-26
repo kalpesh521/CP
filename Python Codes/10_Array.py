@@ -51,8 +51,8 @@ from numpy import *
 arr1=array([2,3,56,7,2])
 arr2=array([22,13,6,17,52])
 
-arr2=arr1.view()
-#arr2=arr1.copy()
+arr2=arr1.view()#Both array will be same
+#arr2=arr1.copy()  # Only change in arr1
 arr1[2]=5
 print(arr1)
 print(arr2)

@@ -96,6 +96,7 @@
 # result=fact(x)
 # print(result)
 #%%
+#Pallindrome or not
 def pallindrome(st):
     return st==st[::-1]
 print(pallindrome("anna"))
