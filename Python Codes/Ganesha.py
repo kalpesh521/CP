@@ -5,6 +5,7 @@ ws.bgcolor('white')
 t =turtle.Turtle
 ht()
 speed(0)
+
 penup()
 rt(90)
 bk(120)
@@ -21,8 +22,8 @@ fd(50)
 for down in range(20):
     fd(8)
     lt(10)
+
 penup()
-st()
 pencolor("purple")
 home()
 lt(90)
@@ -157,9 +158,9 @@ penup()
 lt(125)
 bk(47)
 pendown()
-pensize(2)
+pensize(3)
 pencolor("red")
-rt(27)
+rt(30)
 for up in range(10):
     fd(1)
     rt(5)
@@ -177,5 +178,41 @@ for up in range(10):
 for up in range(10):
     fd(2)
     rt(3)
+pencolor('orange')
+penup()
+lt(125)
+fd(90)
+pendown()
+
+lt(40)
+for up in range(10):
+    fd(3)
+    lt(8)
+rt(170)
+for up in range(10):
+    fd(3)
+    rt(8)
+penup()
+lt(30)
+bk(18)
+lt(120)
+pendown()
+pensize(3)
+for up in range(15):
+    fd(4)
+    lt(2)
+for up in range(15):
+    fd(3)
+    lt(3)
+for up in range(15):
+    fd(3)
+    lt(3)
+pensize(2)
+for up in range(15):
+    fd(4)
+    lt(5)
 ht()
 mainloop()
+
+
+
