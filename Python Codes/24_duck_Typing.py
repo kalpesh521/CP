@@ -1,3 +1,4 @@
+#Duck Typing
 class pycharm:
     def execute(self):
         print("Compiling")
@@ -7,7 +8,7 @@ class MyEditor:
 class Laptop:
     def code(self,ide):
         ide.execute()
-ide=pycharm()
+#ide=pycharm()
 ide=MyEditor()
 l1=Laptop()
 l1.code(ide)

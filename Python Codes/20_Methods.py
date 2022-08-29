@@ -17,7 +17,7 @@ class Student:
         return cls.school
     
     @staticmethod
-    def info():
+    def info():#Static method 
         print("this is Static Method")
 s1=Student(78,56,89)
 s2=Student(79,96,79)

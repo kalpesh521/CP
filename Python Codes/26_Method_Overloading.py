@@ -1,3 +1,4 @@
+#Method Overidingg
 class Student:
     def __init__(self,m1,m2) :
         self.m1=m1
@@ -24,4 +25,4 @@ class B(A):
     #     print("In B show")
     pass
 a1=B()
-# print(a1.show())
+print(a1.show())

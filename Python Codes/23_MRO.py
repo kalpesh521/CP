@@ -14,7 +14,7 @@ class B:
         print("Feature 3")
     def feature4(self):
         print("Feature 4")
-class C(A,B): 
+class C(A,B): #MRO Method resolution Order  ->It always prefer Left node class then right class  
     def feature5(self):
         print("Feature 5")
 a1=C()

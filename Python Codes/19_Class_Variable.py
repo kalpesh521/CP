@@ -1,8 +1,8 @@
 class Car:
     
-    wheel=4
+    wheel=4  #Class / static Variable 
     def __init__(self):
-        self.mil=10
+        self.mil=10  #Instance Variable
         self.name="Audi"
 c1=Car()
 c2=Car()
