@@ -16,6 +16,11 @@ class Topten:
 t1=Topten()
 for i in t1:
     print(i) 
-            
+      
+#Next iter      
+ls=[2,4,6,8]
+it =iter(ls)
+print(it.__next__())
+print(it.__next__())
     
     
