@@ -1,12 +1,12 @@
 from time import sleep
 from threading import *
 class Hello(Thread):
-    def show(self):
+    def run(self):
         for i in range(5):
             print("Hello")
             sleep(1)
 class Hi(Thread):
-    def show(self):
+    def run(self):
         for i in range(5):
             print("Hi")
             sleep(1)
