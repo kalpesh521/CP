@@ -211,7 +211,12 @@ pensize(2)
 for up in range(15):
     fd(4)
     lt(5)
+rt(250)
+penup()
+goto(-120,-140)
 ht()
+pencolor('red')
+turtle.write("Happy Ganesh Chaturthi",font=("calibri",20, "bold"))
 mainloop()
 
 
