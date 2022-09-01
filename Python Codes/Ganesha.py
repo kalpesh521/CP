@@ -5,7 +5,6 @@ ws.bgcolor('white')
 t =turtle.Turtle
 ht()
 speed(0)
-
 penup()
 rt(90)
 bk(120)
