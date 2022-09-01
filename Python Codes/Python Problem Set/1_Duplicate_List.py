@@ -8,7 +8,9 @@ def find_duplicates(elements):
     #return list(seen)   #contain number of list in list 
     return list(duplicates) #contain  duplicates
 print(find_duplicates([3,5,5,3,4,1]))
+print(find_duplicates(['kp','sp','pp','kp','pp']))
 
+#using list 
 lst= [3,5,5,3,4,1]
 def find_duplicate1(lst):
     if len(lst)== len(set(lst)):
@@ -17,6 +19,8 @@ def find_duplicate1(lst):
         return True
 print(find_duplicate1(lst))
 
+
+#Using Count Method
 def find_duplicate2(lst):
     for el in lst:
         if  lst.count(el)>1:
