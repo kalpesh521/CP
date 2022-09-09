@@ -11,3 +11,14 @@ def smart_div(func):
     return inner
 div=smart_div(div)
 print(div(2,4))
+
+def my_decorators(fn):
+    def inner():
+        fn()
+        print("How are you ?")
+    return inner
+
+@my_decorators
+def id():
+    print("Kalpesh,",end =" ")
+id()
