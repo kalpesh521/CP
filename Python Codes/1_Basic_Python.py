@@ -123,6 +123,7 @@ id('kalpesh')
 
 #%%
 #Map
+seq=[1,2,3,4,5]
 n=['India','US','SA','WI']
 print(list(map(square,seq)))
 print(list(map(id,n)))
@@ -145,9 +146,11 @@ print('x' in ['x','y','z'])
 
 tup=((1,2),(4,5),(7,8))
 for (a,b) in tup:
+    print("a : ",end=" ")
     print(a)
+    print("b : ",end=" ")
     print(b)
-    
+ 
 #%%
 print(7**4)
 
@@ -159,7 +162,7 @@ def countdog(s):
             count+=1
     return count
         
-print(countdog("This dog runs faster yhan other dog"))
+print(countdog("This dog runs faster than other dog"))
 
 print("===============")
 #Find the words from the list which start with s
