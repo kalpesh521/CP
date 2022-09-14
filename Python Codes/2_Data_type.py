@@ -17,10 +17,7 @@ nums.reverse()
 print(nums)
 
 #Dictionary
-d={1:'one',2:'two',3:'three'}
-print(d[1])
-print(d.get(2))
-print(d.get(4,'Not Found'))
+
 
 #Merge List to Dictionary
 keys=[1,2,3,4]

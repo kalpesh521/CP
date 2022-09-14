@@ -1,4 +1,4 @@
-from unicodedata import decimal
+ 
 
 
 n=10

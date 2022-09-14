@@ -176,7 +176,7 @@ def caught_speeding(speed,is_birthday):
         speeding=speed
     if speeding >80:
         return "Big ticket"
-    elif speeding >60:
+    elif speeding >60:  
         return "Small tiket"
     else:
         return "No ticket"
