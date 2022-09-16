@@ -1,7 +1,8 @@
 #Pangram-> Sentence should contain all the alphabets 
 
 def pan(str1):
-    if len(set(str1.lower().strip()))>=26:
+    str1=str1.replace(" ","")
+    if len(set(str1.lower()))>=26:
         return True
     else:
         return False
