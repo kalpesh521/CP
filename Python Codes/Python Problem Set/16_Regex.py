@@ -21,3 +21,30 @@ str2=("My Roll no is 138")
 regex='\d+'
 match=re.findall(regex,str2)
 print(match)
+
+#Compile => Case Sensetive
+mystr="India won the match by 25 runs. and ranked_2 in ICC."
+p=re.compile('[a-e]')
+q=re.compile('\d')  # return 0-9 individual value
+r=re.compile('\d+') # return value in one or group
+s=re.compile('\w')  # return 0-9 a-z A-Z individual value
+t=re.compile('\w+') # return alphabet and digit 
+a=re.compile('\W+') # return except alphabet and digit
+print(p.findall(mystr))
+print(q.findall(mystr))
+print(r.findall(mystr))
+print(s.findall(mystr))
+print(t.findall(mystr))
+print(a.findall(mystr))
+
+ 
+regex=r"([a-zA-Z]+)(\d+))"
+match1=re.search(regex,"My Bithdate is Feb 5")
+if match1 !=None:
+    print("The Birthdate is %s"%(match1.start(),match1.end()))
+    print("Thre birthdate is %s" %(match1.group(0)))
+    print("The month is %s"%(match1.group(1)))
+    print("The date is %s"%(match1.group(2)))
+ 
+else:
+    print ("The regex pattern does not match.")
