@@ -1,4 +1,5 @@
 import re #Regex Regular Expression 
+from re import IGNORECASE, split
 import calendar
 def spy_game(l):
     l=[str(i) for i in l]
@@ -37,9 +38,24 @@ print(s.findall(mystr))
 print(t.findall(mystr))
 print(a.findall(mystr))
 
- 
-regex=r"([a-zA-Z]+)(\d+))"
-match1=re.search(regex,"My Bithdate is Feb 5")
+#split()
+print(split('\D+', 'On 12th Jan 2016, at 11:02 AM'))
+
+#sub()
+str2="Suraj buys subji"
+print(re.sub('su','*/',str2))
+print(re.subn('su','*/',str2))
+
+#subn()
+print(re.sub('su','*/',str2,count=1,flags=IGNORECASE))
+tn=(re.subn('su','*/',str2,flags=re.IGNORECASE))
+print(tn)
+print(len(tn))
+print(tn[0])
+
+
+regex= r"([a-zA-Z]+)(\d+))"
+match1=re.search(regex,"My Birthdate is Feb 5")
 if match1 !=None:
     print("The Birthdate is %s"%(match1.start(),match1.end()))
     print("Thre birthdate is %s" %(match1.group(0)))
