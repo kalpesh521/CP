@@ -53,14 +53,16 @@ print(tn)
 print(len(tn))
 print(tn[0])
 
-
-regex= r"([a-zA-Z]+)(\d+))"
+ 
+   
+regex = r"([a-zA-Z]+) (\d+)"
 match1=re.search(regex,"My Birthdate is Feb 5")
 if match1 !=None:
-    print("The Birthdate is %s"%(match1.start(),match1.end()))
-    print("Thre birthdate is %s" %(match1.group(0)))
-    print("The month is %s"%(match1.group(1)))
-    print("The date is %s"%(match1.group(2)))
+    print("The Birthdate is %s , %s "%  (match1.start(),match1.end()))
+    print("Thre birthdate is %s" % (match1.group(0)))
+    print("Thre birthdate is %s" % (match1.group()))
+    print("The month is %s" % (match1.group(1)))
+    print("The date is %s" % (match1.group(2)))
  
 else:
     print ("The regex pattern does not match.")
