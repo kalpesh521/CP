@@ -85,3 +85,4 @@ print(s1.data)
 print("remove :",end=" ")
 s1.remove('e')
 print(s1.data)
+
