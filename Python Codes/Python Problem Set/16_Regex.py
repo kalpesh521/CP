@@ -66,3 +66,9 @@ if match1 !=None:
  
 else:
     print ("The regex pattern does not match.")
+    
+str1="subji is spicy"
+res=re.compile(r'^s')
+#regex=r"\b"
+final=res.findall(str1)
+print(final)
