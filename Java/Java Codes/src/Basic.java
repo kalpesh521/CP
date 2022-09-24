@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import static java.lang.System.*;
 public class Basic {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
@@ -16,6 +16,9 @@ public class Basic {
         int n1=10;
         int n2=20;
         System.out.println((n1>n2)? n1:n2);
+        out.println("KAlpesh");
+        out.println("India");
+
 
     }
 }

@@ -287,7 +287,7 @@ int main(int argc, char const *argv[])
 
     //========================================================================================
 
-    /*  int n;
+     int n;
       cin >> n;
       for (int i = 1; i <= n; i++)
       {        int j;
@@ -308,37 +308,37 @@ int main(int argc, char const *argv[])
           }
           cout << endl;
       }
-  */
+  
     //========================================================================================
 
-    /*
-        int n;
-        cin >> n;
-        for (int i = 1; i <= n; i++)
-        {
-            for (int j = 1; j <= n - i; j++)
-            {
-                cout << " ";
-            }
-            for (int j = 1; j <= 2*i - 1; j++)
-            {
-                cout << "*";
-            }
-            cout<<endl;
-        }
-        for (int i = n; i>=1; i--)
-        {
-            for (int j = 1; j <= n - i; j++)
-            {
-                cout << " ";
-            }
-            for (int j = 1; j <= 2*i - 1; j++)
-            {
-                cout << "*";
-            }
-            cout<<endl;
-        }
-    */
+    
+        // int n;
+        // cin >> n;
+        // for (int i = 1; i <= n; i++)
+        // {
+        //     for (int j = 1; j <= n - i; j++)
+        //     {
+        //         cout << " ";
+        //     }
+        //     for (int j = 1; j <= 2*i - 1; j++)
+        //     {
+        //         cout << "*";
+        //     }
+        //     cout<<endl;
+        // }
+        // for (int i = n; i>=1; i--)
+        // {
+        //     for (int j = 1; j <= n - i; j++)
+        //     {
+        //         cout << " ";
+        //     }
+        //     for (int j = 1; j <= 2*i - 1; j++)
+        //     {
+        //         cout << "*";
+        //     }
+        //     cout<<endl;
+        // }
+    
     //========================================================================================
     /*
         int n;
@@ -379,24 +379,24 @@ int main(int argc, char const *argv[])
      cout << " " << endl;
      n--;
  */
-    int n;
-    cin >> n;
-    int count, k;
-    count=n;
-    int temp=n;
+    // int n;
+    // cin >> n;
+    // int count, k;
+    // count=n;
+    // int temp=n;
     
-    for (int i = n; i >= 1; i--)
-    {
-        //k = 3 * i;
-        count=temp;
-        for (int j = 1; j <= count; count--)
-        {
-            cout << count << " ";
-            count--;
-        }
-        cout << endl;
-        n--;
-    }
+    // for (int i = n; i >= 1; i--)
+    // {
+    //     //k = 3 * i;
+    //     count=temp;
+    //     for (int j = 1; j <= count; count--)
+    //     {
+    //         cout << count << " ";
+    //         count--;
+    //     }
+    //     cout << endl;
+    //     n--;
+    // }
 
     return 0;
 }
