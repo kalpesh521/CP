@@ -100,3 +100,12 @@
 def pallindrome(st):
     return st==st[::-1]
 print(pallindrome("anna"))
+
+#%% 
+
+def fun(a,b):
+    return a+b
+# def fun(a:int,b:int)->int:
+#     return a+b
+a,b=5,10
+print(f"The sum of {a} and {b} is ",fun(a,b))
