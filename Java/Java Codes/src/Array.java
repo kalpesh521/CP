@@ -1,3 +1,4 @@
+ import java.util.Arrays;
 public class Array {
     public static void main(String[] args) {
         int arr[] = new int[5];
@@ -9,5 +10,12 @@ public class Array {
         for (int i = 0; i < arr.length; i++) {
             System.out.println("elemnents ata index " + i + " is " + arr[i]);
         }
+
+        fun(1,2,3,4);
+    }
+
+
+    static void fun (int ...v){
+        System.out.println(Arrays.toString( v));
     }
 }
