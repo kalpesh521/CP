@@ -109,3 +109,11 @@ def fun(a,b):
 #     return a+b
 a,b=5,10
 print(f"The sum of {a} and {b} is ",fun(a,b))
+
+
+# Variable Length argument
+def fun2(*argv):
+    for arg in argv:
+        print(arg)
+        
+fun2("KP","SP","KL",3)
