@@ -10,7 +10,7 @@ public class Array {
         // arr[3] = 61;
         // arr[4] = 16;
         // for (int i = 0; i < arr.length; i++) {
-        //     System.out.println("elemnents ata index " + i + " is " + arr[i]);
+        // System.out.println("elemnents ata index " + i + " is " + arr[i]);
         // }
 
         // fun(1, 2, 3, 4);
@@ -25,10 +25,31 @@ public class Array {
             System.out.println(arr1[i] + " ");
 
         }
+        // Printing an array
+        for (int num : arr1) {
+            System.out.println(num + " ");
+        }
+
+        System.out.println(Arrays.toString(arr1));
+
+        // 2D Array
+
+        int[][] arr2d = new int[3][3];
+        for (int row = 0; row < arr2d.length; row++) {
+            for (int col = 0; col < arr2d[row].length; col++) {
+                arr2d[row][col] = in.nextInt();
+            }
+        }
+        for (int row = 0; row < arr2d.length; row++) {
+            for (int col = 0; col < arr2d[row].length; col++) {
+                System.out.println(arr2d[row][col] + " ");
+            }
+            System.out.println();
+        }
     }
 
     // Variable Argument
     // static void fun(int... v) {
-    //     System.out.println(Arrays.toString(v));
+    // System.out.println(Arrays.toString(v));
     // }
 }
