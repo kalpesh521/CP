@@ -35,17 +35,34 @@ public class Array {
         // 2D Array
 
         int[][] arr2d = new int[3][3];
+        int [][] arr2={
+            {2,4,5,6},
+            {3,4},
+            {1,3,5}
+        };
         for (int row = 0; row < arr2d.length; row++) {
             for (int col = 0; col < arr2d[row].length; col++) {
                 arr2d[row][col] = in.nextInt();
             }
         }
+        
         for (int row = 0; row < arr2d.length; row++) {
             for (int col = 0; col < arr2d[row].length; col++) {
                 System.out.println(arr2d[row][col] + " ");
             }
             System.out.println();
         }
+        for (int row = 0; row < arr2.length; row++) {
+            for (int col = 0; col < arr2[row].length; col++) {
+                System.out.println(arr2[row][col] + " ");
+            }
+            System.out.println();
+        }
+
+        for (int[] a : arr2d) {
+            System.out.println(Arrays.toString(a));
+        }
+       
     }
 
     // Variable Argument
