@@ -21,8 +21,8 @@ import pyautogui as pg
 import time 
 print("Program will run in 5 sec")
 time.sleep(5)
-for i in range (115):
-    pg.write("How are you ,Darshan?")
+for i in range (105):
+    pg.write("How are you ,Suraj ,Project ch kay katayach?")
     time.sleep(0.5)
     pg.press("Enter")
 
