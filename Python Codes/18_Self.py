@@ -1,7 +1,7 @@
 #self points to all object and return value for which function called
 
 class Computer:
-    def __init__(self) :
+    def __init__(self) : #Constructor
         self.name="Virat"
         self.age="28"
     def  compare(self,other):

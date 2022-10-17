@@ -1,6 +1,5 @@
 import functools
 
-
 f = lambda a:a**2
 print(f(5))
 
@@ -16,11 +15,15 @@ print(even)
 #Map
 cube =list(map(lambda a:a**2,even))
 print(cube)
+
 #Reduce 
 def add_all(a,b):
     return a+b
+
 from functools import reduce 
+
 sum =reduce(add_all,cube)
-sum_lambda =reduce(lambda a,b:a+b,cube)
 print(sum)
+
+sum_lambda =reduce(lambda a,b:a+b,cube)
 print(sum_lambda)
