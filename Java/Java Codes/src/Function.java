@@ -18,7 +18,7 @@ public class Function {
     //Block Scope
     {
          a= 100;
-         name ="Sham";
+         name ="Ram";
          System.out.println(a);
          System.out.println(name);
     }
