@@ -18,7 +18,7 @@ print(nums)
 
 #Dictionary
 
-
+#python code
 #Merge List to Dictionary
 keys=[1,2,3,4]
 values=['one','two','three','four']
