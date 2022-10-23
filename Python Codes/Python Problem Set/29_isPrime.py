@@ -1,4 +1,4 @@
-#Program : number is prime or not 
+#Program number is prime or not 
 def isprime(n):
     if n in [2,3]:
         return True
