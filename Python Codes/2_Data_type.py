@@ -1,5 +1,5 @@
 #List ,tuple ,set and Dictionary
-#Data structure
+#Data structure Basic
 #%%
 nums=[12,4,5,67,8,3]
 nums.append(1)
