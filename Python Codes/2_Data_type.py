@@ -13,6 +13,7 @@ print(max(nums))
 print(min(nums))
 print(sum(nums))
 nums.sort()
+nums.sort()
 nums.reverse()
 print(nums)
 
