@@ -35,7 +35,7 @@ int main()
         cout << endl;
     }
     int M;
-    cout << "\nEnter knapsack size: ";
+    cout << "\nEnter knapsack size is : ";
     cin >> M;
     cout << knapSack(M, wt, val, n);
     return 0;
