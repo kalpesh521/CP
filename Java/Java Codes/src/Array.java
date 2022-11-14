@@ -2,17 +2,36 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Array {
-    public static void main(String[] args) {
-        // int arr[] = new int[5];
-        // arr[0] = 4;
-        // arr[1] = 5;
-        // arr[2] = 6;
-        // arr[3] = 61;
-        // arr[4] = 16;
-        // for (int i = 0; i < arr.length; i++) {
-        // System.out.println("elemnents ata index " + i + " is " + arr[i]);
-        // }
 
+    static void min(int arr[]) {
+        int min = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+            if (min > arr[i]) {
+                min = arr[i];
+            }
+            System.out.println("Min number is :" + min);
+        }
+    }
+
+    // ========================================================================================================
+    public static void main(String[] args) {
+        int arr[] = new int[5];
+        arr[0] = 4;
+        arr[1] = 5;
+        arr[2] = 6;
+        arr[3] = 61;
+        arr[4] = 16;
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println("elemnents ata index " + i + " is " + arr[i]);
+        }
+
+        // Print array using for each loop
+        for (int i : arr) {
+            System.out.println(i);
+        }
+        // ===================================================================================
         // fun(1, 2, 3, 4);
         Scanner in = new Scanner(System.in);
         int[] arr1 = new int[5];
@@ -31,21 +50,21 @@ public class Array {
         }
 
         System.out.println(Arrays.toString(arr1));
-
+        // =======================================================================================================
         // 2D Array
 
         int[][] arr2d = new int[3][3];
-        int [][] arr2={
-            {2,4,5,6},
-            {3,4},
-            {1,3,5}
+        int[][] arr2 = {
+                { 2, 4, 5, 6 },
+                { 3, 4 },
+                { 1, 3, 5 }
         };
         for (int row = 0; row < arr2d.length; row++) {
             for (int col = 0; col < arr2d[row].length; col++) {
                 arr2d[row][col] = in.nextInt();
             }
         }
-        
+
         for (int row = 0; row < arr2d.length; row++) {
             for (int col = 0; col < arr2d[row].length; col++) {
                 System.out.println(arr2d[row][col] + " ");
@@ -62,11 +81,15 @@ public class Array {
         for (int[] a : arr2d) {
             System.out.println(Arrays.toString(a));
         }
-       
+        // ======================================================================================================
+        // Calling method with array as parmeter
+        int arr5[] = { 3, 1, 4, 5 };
+        min(arr5);
     }
 
     // Variable Argument
     // static void fun(int... v) {
     // System.out.println(Arrays.toString(v));
     // }
+
 }
