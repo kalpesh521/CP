@@ -55,8 +55,10 @@ void Bellman_Ford(Graph g[], int sourceV, int v, int e)
 
 int main()
 {
-    int vertices = 5, edges = 10, sourceV = 0;
-    Graph g[edges] = {{0, 1, 6}, {0, 2, 7}, {1, 2, 8}, {1, 4, -4}, {1, 3, 5}, {3, 1, -2}, {2, 3, -3}, {2, 4, 9}, {4, 0, 2}, {4, 3, 7}};
-    Bellman_Ford(g, 0, 5, 10);
+    int vertices = 3, edges = 3, sourceV = 0;
+    Graph g[edges] = {{0, 1, 10}, {0, 2, 5}, {1, 2, -8}};
+    // int vertices = 5, edges = 10, sourceV = 0;
+    // Graph g[edges] = {{0, 1, 6}, {0, 2, 7}, {1, 2, 8}, {1, 4, -4}, {1, 3, 5}, {3, 1, -2}, {2, 3, -3}, {2, 4, 9}, {4, 0, 2}, {4, 3, 7}};
+    Bellman_Ford(g, 0, 3, 3);
     return 0;
 }
