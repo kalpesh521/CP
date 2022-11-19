@@ -73,7 +73,7 @@ bool solveNQueen(vector<vector<int>> &board, int col)
 
 
 
-// driver program to test above function 
+//  program to test above function 
 int main() 
 { 
     int n;
