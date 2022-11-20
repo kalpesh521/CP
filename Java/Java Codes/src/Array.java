@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Array {
 
+    // Passing array as parameter
     static void min(int arr[]) {
         int min = arr[0];
 
@@ -15,6 +16,7 @@ public class Array {
 
     }
 
+    // Creating method which return array
     static int[] get() {
         return new int[] { 3, 5, 6, 8, 9 };
     }
@@ -22,6 +24,8 @@ public class Array {
     // ========================================================================================================
     public static void main(String[] args) {
         /*
+         * 
+         * // array Creation
          * int arr[] = new int[5];
          * arr[0] = 4;
          * arr[1] = 5;
@@ -40,6 +44,8 @@ public class Array {
          * //
          * =============================================================================
          * ======
+         * 
+         * // user input in array
          * // fun(1, 2, 3, 4);
          * Scanner in = new Scanner(System.in);
          * int[] arr1 = new int[5];
@@ -59,6 +65,7 @@ public class Array {
          * 
          * System.out.println(Arrays.toString(arr1));
          * //
+         * 
          * =============================================================================
          * ==========================
          * // 2D Array
@@ -103,9 +110,14 @@ public class Array {
             System.out.println(i + "  ");
         }
 
+        //Array indexOutOfbound
+        int arr6[] = { 50, 60, 70, 80 };
+        for (int i = 0; i <arr6.length; i++) {
+            System.out.println(Arrays.toString(arr6));
+            break;
+        }
     }
 
-    
     // Variable Argument
     // static void fun(int... v) {
     // System.out.println(Arrays.toString(v));
