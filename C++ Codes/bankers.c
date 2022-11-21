@@ -20,7 +20,7 @@ int main()
     printf("\n\nEnter the no of resources : ");
     scanf("%d", &r);
 
-    printf("\n\nEnter the Max Matrix for each process : ");
+    printf("\n\nEnter the Max need for each process : ");
 
     for (i = 0; i < p; i++)
 
