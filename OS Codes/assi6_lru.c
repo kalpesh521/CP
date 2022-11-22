@@ -34,7 +34,19 @@ int isHit(int data)
     }
     return hit;
 }
-
+int getHitIndex(int data)
+{
+    int hitind;
+    for (k = 0; k < nf; k++)
+    {
+        if (p[k] == data)
+        {
+            hitind = k;
+            break;
+        }
+    }
+    return hitind;
+}
 void dispPages()
 {
     for (k = 0; k < nf; k++)
@@ -158,7 +170,95 @@ void lru()
     }
     dispPgFaultCnt();
 }
-
+void lfu()
+{
+    int usedcnt[100];
+    int least, repin, sofarcnt = 0, bn;
+    initialize();
+    for (i = 0; i < nf; i++)
+        usedcnt[i] = 0;
+    for (i = 0; i < n; i++)
+    {
+        printf("\n For %d :", in[i]);
+        if (isHit(in[i]))
+        {
+            int hitind = getHitIndex(in[i]);
+            usedcnt[hitind]++;
+            printf("No page fault!");
+        }
+        else
+        {
+            pgfaultcnt++;
+            if (bn < nf)
+            {
+                p[bn] = in[i];
+                usedcnt[bn] = usedcnt[bn] + 1;
+                bn++;
+            }
+            else
+            {
+                least = 9999;
+                for (k = 0; k < nf; k++)
+                    if (usedcnt[k] < least)
+                    {
+                        least = usedcnt[k];
+                        repin = k;
+                    }
+                p[repin] = in[i];
+                sofarcnt = 0;
+                for (k = 0; k <= i; k++)
+                    if (in[i] == in[k])
+                        sofarcnt = sofarcnt + 1;
+                usedcnt[repin] = sofarcnt;
+            }
+            dispPages();
+        }
+    }
+    dispPgFaultCnt();
+}
+void secondchance()
+{
+    int usedbit[50];
+    int victimptr = 0;
+    initialize();
+    for (i = 0; i < nf; i++)
+        usedbit[i] = 0;
+    for (i = 0; i < n; i++)
+    {
+        printf("\nFor %d:", in[i]);
+        if (isHit(in[i]))
+        {
+            printf("No page fault!");
+            int hitindex = getHitIndex(in[i]);
+            if (usedbit[hitindex] == 0)
+                usedbit[hitindex] = 1;
+        }
+        else
+        {
+            pgfaultcnt++;
+            if (usedbit[victimptr] == 1)
+            {
+                do
+                {
+                    usedbit[victimptr] = 0;
+                    victimptr++;
+                    if (victimptr == nf)
+                        victimptr = 0;
+                } while (usedbit[victimptr] != 0);
+            }
+            if (usedbit[victimptr] == 0)
+            {
+                p[victimptr] = in[i];
+                usedbit[victimptr] = 1;
+                victimptr++;
+            }
+            dispPages();
+        }
+        if (victimptr == nf)
+            victimptr = 0;
+    }
+    dispPgFaultCnt();
+}
 int main()
 {
     int choice;
@@ -180,7 +280,12 @@ int main()
         case 4:
             lru();
             break;
-
+        case 5:
+            lfu();
+            break;
+        case 6:
+            secondchance();
+            break;
         default:
             return 0;
             break;
