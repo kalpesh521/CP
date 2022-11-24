@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 
 // program for sjf scheduling algorithm pre-emptive
 
@@ -16,7 +16,7 @@ int main()
         printf("Enter the arrival time and burst time of process %d: ", i + 1);
         scanf("%d", &at[i]);
         scanf("%d", &burst_time[i]);
-
+       
         p[i] = i + 1;
     }
     for (i = 0; i < n; i++)
@@ -47,7 +47,6 @@ int main()
         }
         t = t + burst_time[i];
         ct[i] = t;
-
         turnaroundtime[i] = ct[i] - at[i];
         waiting_time[i] = turnaroundtime[i] - burst_time[i];
         awaiting_time = awaiting_time + waiting_time[i];
@@ -55,6 +54,13 @@ int main()
     }
     awaiting_time = awaiting_time / n;
     atat = atat / n;
-     p[i]=i+1;
+    printf("\nProcess\t\tarrival time\t\t burst time\t\t CT\t\t  turnaround time\t\t  waiting time\n ");
+    for (i = 0; i < n; i++)
+    {
+        printf("%d\t\t\t%d\t\t\t%d\t\t\t%d\t\t\t%d\t\t\t%d\n", p[i], at[i], burst_time[i], ct[i], turnaroundtime[i], waiting_time[i]);
+    }
+    printf("Average waiting time: %f", awaiting_time);
+    printf("\nAverage turnaround time: %f", atat);
     return 0;
 }
+
