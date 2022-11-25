@@ -112,7 +112,7 @@ void optimal()
     }
     dispPgFaultCnt();
 }
-//lru
+
 void lru()
 {
     initialize();
