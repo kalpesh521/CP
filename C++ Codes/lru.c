@@ -16,7 +16,7 @@ void getData()
     scanf("%d", &nf);
 }
 void initialize()
-{
+{   
     pgfaultcnt = 0;
     for (i = 0; i < nf; i++)
         p[i] = 9999;
@@ -159,7 +159,7 @@ void lru()
     }
     dispPgFaultCnt();
 }
-
+//m
 int main()
 {
     int choice;
