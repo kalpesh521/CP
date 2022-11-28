@@ -159,7 +159,7 @@ void lru()
     }
     dispPgFaultCnt();
 }
-//m
+//main function 
 int main()
 {
     int choice;
