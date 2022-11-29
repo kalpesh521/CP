@@ -6,8 +6,8 @@ public class Basic {
 
         //User Input
         Scanner sc =new Scanner(System.in);
-        int n=sc.nextInt();
         System.out.println("Enter value of n");
+        int n=sc.nextInt();
         for(int i =1;i<=n;i++){
             System.out.println(i);
         }
@@ -16,7 +16,7 @@ public class Basic {
         int n1=10;
         int n2=20;
         System.out.println((n1>n2)? n1:n2);
-        out.println("KAlpesh");
+        out.println("Kalpesh");
         out.println("India");
 
 
