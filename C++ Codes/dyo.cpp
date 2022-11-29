@@ -57,3 +57,7 @@ int main()
     }
     return 0;
 }
+// write  cpp program for addition of two numbers?      
+void
+a= 10 ;
+

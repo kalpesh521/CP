@@ -183,3 +183,33 @@ def caught_speeding(speed,is_birthday):
     
 print(caught_speeding(81,True))
 print(caught_speeding(81,False))
+
+# write a function to add two numbers ?
+# write a function to calculate area of trapezium ?
+# write a function to calculate  sum,sutraction, multiplication and division of two numbers ?
+
+def sum(a,b):
+    return a+b
+
+def sub (a,b):
+    return a-b      
+
+def mul (a,b):
+    return a*b
+def div (a,b):
+    return a/b
+def cal(a,b):
+    print("sum is : ",sum(a,b))
+    print("sub is : ",sub(a,b))
+    print("mul is : ",mul(a,b))
+    print("div is : ",div(a,b))
+    # print("trape is : ",trape(a,b,2))
+
+print(cal(3,4))
+def trape(a,b,h):
+    return (a+b)*h/2
+
+
+ 
+
+ 

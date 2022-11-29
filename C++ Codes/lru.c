@@ -187,4 +187,9 @@ int main()
             break;
         }
     }
+    // write  cpp program for addition of two numbers 
+    int a= 10;
+    int b = 5 ;
+                  
+
 }
