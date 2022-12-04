@@ -134,6 +134,7 @@ print(list(map(lambda num:num**3,seq)))
 print(list(filter(lambda n:n%2 ==0,seq)))
 #%%
 
+
 #Methods
 test="India is my country #India"
 print(test.split())

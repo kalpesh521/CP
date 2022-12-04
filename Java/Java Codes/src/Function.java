@@ -22,7 +22,7 @@ public class Function {
          System.out.println(a);
          System.out.println(name);
     }
-     System.out.println(a);
+    System.out.println(a);
     System.out.println(name);
 
     }
