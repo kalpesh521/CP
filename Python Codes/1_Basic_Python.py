@@ -1,4 +1,5 @@
- # %%
+# Python Basics
+# # %%
 age= 21
 name = "virat"
 print("My name is {one} , age is {two} and roll number is {two}".format(one=name,two=age))
