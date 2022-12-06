@@ -1,4 +1,4 @@
-import java.lang.annotation.Target;
+ 
 
 public class LinearSearch {
     public static void main(String[] args) {
