@@ -12,7 +12,7 @@ public class OrderAgnosticBS {
 
         int start = 0;
         int end = arr.length - 1;
-        boolean isAsc = arr[start] < arr[end];
+        boolean isAsc = arr[start] < arr[end];//if Ascending 
         while (start <= end) {
             int mid = start + (end - start) / 2;
 
