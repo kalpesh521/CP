@@ -1,5 +1,5 @@
 import java.util.Arrays;
-
+//Binary Search 2D matrix
 public class BSearch2D {
     public static void main(String[] args) {
         int[][] matrix = { { 2, 5, 6, 8 },
