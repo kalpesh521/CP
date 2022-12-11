@@ -1,5 +1,7 @@
 //https://leetcode.com/problems/find-smallest-letter-greater-than-target/
 //Question No. : 744
+
+//Binary Search Ceiling approach (>target)
 public class SmallestInteger {
 
     public static void main(String[] args) {
