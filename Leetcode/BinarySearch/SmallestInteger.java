@@ -1,7 +1,8 @@
+package Leetcode.BinarySearch;
 //https://leetcode.com/problems/find-smallest-letter-greater-than-target/
 //Question No. : 744
 
-//Binary Search Ceiling approach (>target)
+//Binary Search Ceiling approach (>target) Not equal 
 public class SmallestInteger {
 
     public static void main(String[] args) {
