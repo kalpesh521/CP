@@ -1,6 +1,6 @@
 public class OrderAgnosticBS {
 
-    // Order Agnostic BS used for both asc/desc order array
+    // Order Agnostic Binary Search  used for both asc/desc order array
     public static void main(String[] args) {
         int[] arr = { 23, 12, 9, 8, 7, 2, -1, -3 };//Descending Order
         // int[] arr = { -1, 3, 4, 5, 7, 8, 12, 14, 16, 44, 56 };//Ascending Order 
