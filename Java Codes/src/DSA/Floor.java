@@ -1,4 +1,5 @@
 // Floor Binary search 
+// Compare with ceiling binary Search 
 public class Floor {
 
     public static void main(String[] args) {
