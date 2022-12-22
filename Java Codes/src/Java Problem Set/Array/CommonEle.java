@@ -1,10 +1,13 @@
- 
+// Find common elements in three arrays
 public class CommonEle {
 
     public static void commonelements(int arr1[], int arr2[], int arr3[]) {
         int x = 0;
         int y = 0;
         int z = 0;
+
+        //0 ,0 ,0
+        
         while (x < arr1.length && y < arr2.length && z < arr3.length) {
             if (arr1[x] == arr2[y] && arr2[y] == arr3[z]) {
                 System.out.println(arr1[x]);
