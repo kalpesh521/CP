@@ -9,7 +9,7 @@ public class classes {
 
         System.out.println(kp.rollno);// Call to default constructor
         System.out.println(pp.rollno);// call to parameterized cnstructor
-        System.out.println(random.rollno);// call to parameterized cnstructor
+        System.out.println(random.rollno);
         System.out.println(random2.name);// calling one constructor to another constructor
 
         pp.greetings();// CAlling method
