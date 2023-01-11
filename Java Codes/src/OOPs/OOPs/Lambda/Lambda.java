@@ -2,7 +2,7 @@ package OOPs.OOPs.Lambda;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
-//Lambda function java
+//Lambda function gvvgbg
 public class Lambda {
 
     public static void main(String[] args) {
