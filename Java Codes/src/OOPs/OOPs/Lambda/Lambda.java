@@ -2,7 +2,7 @@ package OOPs.OOPs.Lambda;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
-//Lambda Function
+//Lambda function java
 public class Lambda {
 
     public static void main(String[] args) {
