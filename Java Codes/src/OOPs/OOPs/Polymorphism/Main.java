@@ -2,7 +2,7 @@ package OOPs.OOPs.Polymorphism;
 
 public class Main {
     public static void main(String[] args) {
-        // Polymorphism
+        // Polymorphism problem
         //Method Overiding
         Shapes obj1 =new Shapes() ;
         obj1.area();
