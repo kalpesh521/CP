@@ -1,3 +1,5 @@
+
+
 // Find common elements in three arrays
 public class CommonEle {
 
