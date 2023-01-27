@@ -1,7 +1,7 @@
 package Java_Problem_Set.Array.Array;
 
 import java.util.Scanner;
-
+// Delete elements from an array
 public class DeleteElement {
     public static void main(String[] args) {
         int[] arr = new int[100];
