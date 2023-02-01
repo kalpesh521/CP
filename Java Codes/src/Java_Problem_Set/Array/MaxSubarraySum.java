@@ -1,5 +1,6 @@
 package Java_Problem_Set.Array;
 
+// Kaden's Theorem -> To find Maximum sum of array
 public class MaxSubarraySum {
     public static int MaxSubarray(int[] arr) {
         int Maxsum = arr[0];
@@ -17,7 +18,7 @@ public class MaxSubarraySum {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, -5, 4, 3, 8, 5};//{4,3,8,5} Subarray
+        int[] arr = {1, 2, -5, 4, 3, 8, 5};//{4,3,8,5} Subarray =20
         int[] arr1 = {-2, -1};
         int result = MaxSubarray(arr);
         System.out.println(result);
