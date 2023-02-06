@@ -1,4 +1,4 @@
-
+package Java_Problem_Set.Array;
 
 // Find common elements in three arrays
 public class CommonEle {
