@@ -19,8 +19,8 @@ public class MaxSubarraySum {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, -5, 4, 3, 8, 5};//{4,3,8,5} Subarray =20
-        int[] arr1 = {-2, -1};
-        int result = MaxSubarray(arr);
+        int[] arr1 = {1,8,6,2,5,4,8,3,7};
+        int result = MaxSubarray(arr1);
         System.out.println(result);
     }
 
