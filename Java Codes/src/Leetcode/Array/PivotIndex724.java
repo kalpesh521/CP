@@ -1,4 +1,4 @@
-package Leetcode;
+package Leetcode.Array;
 
 public class PivotIndex724 {
     static int getpivot(int[] arr) {

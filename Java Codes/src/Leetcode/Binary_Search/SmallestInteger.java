@@ -1,4 +1,4 @@
-package Leetcode.BinarySearch;
+package Leetcode.Binary_Search;
 //https://leetcode.com/problems/find-smallest-letter-greater-than-target/
 //Question No. : 744
 //Binary Search Ceiling approach (>target) Not equal 
