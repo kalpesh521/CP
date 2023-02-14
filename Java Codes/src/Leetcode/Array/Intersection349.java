@@ -1,5 +1,8 @@
 package Leetcode.Array;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Intersection349 {
 
     public int[] intersection(int[] nums1, int[] nums2) {
@@ -22,4 +25,7 @@ public class Intersection349 {
         return result;
     }
 
+    public static void main(String[] args) {
+
+    }
 }
