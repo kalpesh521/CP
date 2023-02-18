@@ -1,3 +1,5 @@
+package DSA.Searching;
+
 import java.util.Arrays;
 
 public class Linear {

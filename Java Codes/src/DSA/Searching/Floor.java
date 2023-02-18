@@ -1,11 +1,13 @@
-// Floor Binary search 
+package DSA.Searching;
+
+// Floor Binary search
 // Compare with ceiling binary Search 
-// it will return the end value 
+// it will return the end value
 
 public class Floor {
     public static void main(String[] args) {
-        int[] arr = { 7, 8, 12, 14, 16, 44, 56 };
-        int target = 14;
+        int[] arr = { 5,7, 8, 12, 14, 16, 44, 56 };
+        int target = 15;
         System.out.println(floorBS(arr, target));
     }
 

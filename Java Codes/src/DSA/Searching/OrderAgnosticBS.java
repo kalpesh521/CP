@@ -1,3 +1,5 @@
+package DSA.Searching;
+
 public class OrderAgnosticBS {
 
     // Order Agnostic Binary Search  used for both asc/desc order array
