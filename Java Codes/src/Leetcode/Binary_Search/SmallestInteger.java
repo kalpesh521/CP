@@ -24,7 +24,8 @@ public class SmallestInteger {
 
             }
         }
-        return letters[start % letters.length];
+        return letters[start % letters.length];//if 4%4 =0 To print next of last element is start element
+        // EX. Next of j is c
 
     }
 }
