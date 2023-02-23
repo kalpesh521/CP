@@ -1,7 +1,7 @@
 package Leetcode.Binary_Search;
 // Leetcode 852
 public class PeakElement852 {
-
+//consist of a ascending array upto peak and then descending
     public static int peakIndexInMountainArray(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
