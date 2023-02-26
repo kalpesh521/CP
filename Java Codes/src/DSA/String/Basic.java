@@ -1,5 +1,7 @@
 package DSA.String;
 
+import java.util.Arrays;
+
 public class Basic {
     public static void main(String[] args) {
         String a= "Kalpesh";
@@ -20,6 +22,32 @@ public class Basic {
         System.out.printf("Formatted string is  %.2f \n",c);
         System.out.printf("Formatted string is  %.2f \n",d);
         System.out.printf("value of pie is  %.3f \n",Math.PI);
-        System.out.printf("Hello %s  Where are  you %s ?","Kalpesh","from");
+        System.out.printf("Hello %s  Where are  you %s ?\n","Kalpesh","from");
+
+
+        //Printing Alphabets
+        String series ="";
+        for (int i=0;i<26;i++){
+            char ch = (char)('a'+i);
+            series+=ch;
+        }
+        System.out.println(series);
+
+        //printinf alphabets using stringBuilder
+        StringBuilder seriesnew = new StringBuilder();
+        for (int i=0;i<26;i++){
+            char ch = (char)('a'+i);
+            seriesnew.append(ch);
+        }
+        System.out.println(seriesnew);
+
+        //String Methods
+        //printing character
+        String name = "kalpesh Pawar";
+        System.out.println(Arrays.toString(name.toCharArray()));
+        System.out.println(name.toLowerCase());
+        System.out.println(name.indexOf('a'));
+        System.out.println(Arrays.toString(name.split(" ")));
+
     }
 }
