@@ -1,5 +1,5 @@
 package DSA.String;
-// Program to check whether String is pallindrome or not
+// WAP Program to check whether String is pallindrome or not
 public class isPallindrome {
     public static void main(String[] args) {
     String str = "Madamn";
