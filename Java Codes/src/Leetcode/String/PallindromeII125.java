@@ -1,8 +1,8 @@
 package Leetcode.String;
 
-public interface PallindromeII125 {
+public class PallindromeII125 {
 
-    public default boolean isPalindrome(String s) {
+    public boolean isPalindrome(String s) {
         if (s.isEmpty()) {
             return true;
         }
