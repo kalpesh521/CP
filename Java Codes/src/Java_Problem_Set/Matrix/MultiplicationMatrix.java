@@ -1,7 +1,6 @@
 package Java_Problem_Set.Matrix;
 
 import java.util.Scanner;
-
 public class MultiplicationMatrix {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
