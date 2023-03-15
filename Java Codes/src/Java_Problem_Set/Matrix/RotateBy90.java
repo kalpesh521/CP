@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class RotateBy90 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number of rows of first matrix");
+        System.out.println("Enter number of rows of   matrix");
         int n = sc.nextInt();
-        System.out.println("Enter number of columns of first matrix");
+        System.out.println("Enter number of columns of matrix");
         int m = sc.nextInt();
-        System.out.println("Enter Row and Column of first Matrix");
+        System.out.println("Enter Row and Column of  Matrix");
         int[][] arr = new int[n][m];
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[0].length; j++) {

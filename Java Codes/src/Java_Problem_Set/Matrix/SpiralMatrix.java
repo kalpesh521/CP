@@ -16,7 +16,6 @@ public class SpiralMatrix {
                 arr[i][j] = sc.nextInt();
             }
         }
-
         int minr=0;
         int minc=0;
         int maxr= arr.length-1;
