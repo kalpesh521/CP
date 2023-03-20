@@ -1,6 +1,6 @@
 package Java_Problem_Set.Matrix;
 
-import java.util.Scanner
+import java.util.Scanner;
 //Saddle Point -> least in row and max in column
 public class SaddlePoint {
     public static void main(String[] args) {
