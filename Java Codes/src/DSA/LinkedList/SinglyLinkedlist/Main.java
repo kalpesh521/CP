@@ -12,5 +12,11 @@ public class Main {
 
 
         list.display();
+        System.out.println(list.Deletefirst());
+        list.display();
+        System.out.println(list.deleteLast());
+        list.display();System.out.println(list.deleteIndex(2));
+        list.display();
+        System.out.println(list.Find(3));
     }
 }
