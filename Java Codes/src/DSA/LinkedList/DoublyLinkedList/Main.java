@@ -10,5 +10,7 @@ public class Main {
         list.display();
         list.insertLast(99);
         list.display();
+        list.InsertAfter(5,21);
+        list.display();
     }
 }
