@@ -1,7 +1,5 @@
 package DSA.LinkedList.DoublyLinkedList;
 
-
-
 public class DL {
     private class Node {
         int val;
@@ -59,25 +57,25 @@ public class DL {
                 return node;
             node = node.next;
         }
-
         return null;
     }
 
-
-    public void  InsertAfter(int after,int value){
+    // Function to insert value after value in list
+    public void InsertAfter(int after, int value) {
         Node p = Find(after);
-        if(p==null){
+        if (p == null) {
             System.out.println("P not Exist");
             return;
         }
 
         Node node = new Node(value);
-        node.next=p.next;
-        p.next=node;
-        node.prev=p;
-        if(node.next!= null)
-        node.next.prev= node;
+        node.next = p.next;
+        p.next = node;
+        node.prev = p;
+        if (node.next != null)
+            node.next.prev = node;
     }
+
     public void display() {
         Node node = head;
         Node last = null;
