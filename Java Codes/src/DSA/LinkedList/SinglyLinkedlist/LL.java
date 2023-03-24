@@ -10,7 +10,7 @@ public class LL {
     }
 
     //Insertion in Linkedlist
-    public void insertFirst(int val) {
+    public void inserLast(int val) {
         Node node = new Node(val);
         node.next = head;
         head = node;
@@ -23,7 +23,7 @@ public class LL {
     //Insert at last
     public void insertLast(int val) {
         if (tail == null) {
-            insertFirst(val);
+            inserLast(val);
             return;
         }
         Node node = new Node(val);
@@ -36,7 +36,7 @@ public class LL {
     //Insert at index
     public void insert(int val, int index) {
         if (index == 0) {
-            insertFirst(val);
+            inserLast(val);
         }
         if (index == size) {
             insertLast(val);
@@ -131,5 +131,22 @@ public class LL {
             this.val = val;
             this.next = next;
         }
+    }
+
+    //Leetcode Questions
+
+    public void removeDuplicates(){
+        Node node =head;
+        while (node.next !=null){
+            if(node.val==node.next.val){
+                node.next=node.next.next;
+                size--;
+            }else{
+                node=node.next;
+            }
+
+        }
+        tail=node;
+        tail.next=null;
     }
 }
