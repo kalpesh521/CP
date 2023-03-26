@@ -9,11 +9,13 @@ Easy :
 141 LinkedList Cycle  (fast-slow pointer concept)
 202 Happy Number (fast-slow pointer approach)(find square)
 876 Middle node of linkedList (fast-slow pointer approach)
+206 Reverse List (reverse by changing position of nodes prev ,present , next)
 
 ----------------------------------------------------------------------------------
 
 Medium :
 142 LinkedList Cycle 2 (Find starting node of cycle)
+148 Sort List (Merge Sort / Recursive Bubble Sort)
 
 -------------------------------------------------------------------------------------
 Notes:
