@@ -1,5 +1,7 @@
 package DSA.LinkedList.SinglyLinkedlist;
 
+import Leetcode.LinkedList.LinkedListCycle141;
+
 public class Main {
     public static void main(String[] args) {
 //        LL list = new LL();
@@ -44,5 +46,8 @@ public class Main {
 
         LL ans = LL.merge(first,second);
         ans.display();
+
+        LinkedListCycle141 lst =new LinkedListCycle141();
+
     }
 }
