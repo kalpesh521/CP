@@ -8,9 +8,15 @@ Easy :
 21  Merge Two sorted LinkedList (create new third list and add  by compairing two sorted list we have to merge)
 141 LinkedList Cycle  (fast-slow pointer concept)
 202 Happy Number (fast-slow pointer approach)(find square)
-------------------------------------------------------------------------------------
+876 Middle node of linkedList (fast-slow pointer approach)
+
+----------------------------------------------------------------------------------
 
 Medium :
 142 LinkedList Cycle 2 (Find starting node of cycle)
 
 -------------------------------------------------------------------------------------
+Notes:
+1. fast-slow pointer Approach :
+   a> Cycle detection  (slow==fast)
+   b> Find number of nodes (middle node)
