@@ -1,7 +1,7 @@
 package Leetcode.LinkedList;
 
-public class ReverseKGroup25 {
-
+public class ReverseAlternateKGroup25 {
+// https://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list/
 
     public ListNode reverseKGroup(ListNode head, int k) {
 
@@ -10,10 +10,9 @@ public class ReverseKGroup25 {
         }
         ListNode current = head;
         ListNode prev = null;
-        //The group less than k should not be reverse so used getlength() and count function
-        int length = getLength(head);
-        int count = length / k;
-        while (count > 0) {
+
+
+        while (current != null) {
             // reverse  left and right (right - left +1 )
             ListNode last = prev;
             ListNode newEnd = current;
@@ -37,12 +36,12 @@ public class ReverseKGroup25 {
             }
 
             newEnd.next = current;
-
-            if (current == null) {
-                break;
+            //Above program will return first three k nodes
+            // Skip next k nodes
+            for (int i = 0; i < k; i++) {
+                prev = current;
+                current = current.next;
             }
-            prev = newEnd;
-            count--;
         }
         return head;
     }
