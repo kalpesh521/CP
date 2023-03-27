@@ -1,5 +1,9 @@
 
 LinkedList Leetcode Question List
+Types Approach :
+1. Fast & Slow Pointer Approach
+2. Reverse List
+3. Recursive LinkedList
 =====================================================================================
 
 83  Remove Duplicates from Sorted List (skip next)
@@ -15,6 +19,7 @@ LinkedList Leetcode Question List
 206 Reverse List (reverse by changing position of nodes prev ,present , next)
 92  Reverse LinkedList II (Position Linked)
 234 Pallindrome LinkedList (find mid node , reverse second half and compare )
+143 Reorder LinkedList (find mid , reverse second half and add one by one node after each node of first half)
 
 -------------------------------------------------------------------------------------
 Notes:
