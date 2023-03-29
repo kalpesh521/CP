@@ -1,5 +1,5 @@
 package Leetcode.LinkedList;
-//Reverse List
+
 public class ReverseList206 {
 
     public void reverse(ListNode head) {
