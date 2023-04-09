@@ -1,5 +1,5 @@
 package Java_Problem_Set.Pattern_Questions;
-//star
+//
 public class star_Pattern {
     public static void main(String[] args) {
         star1(4);
