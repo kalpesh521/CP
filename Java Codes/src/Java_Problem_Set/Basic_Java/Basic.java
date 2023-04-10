@@ -1,5 +1,6 @@
 package Java_Problem_Set.Basic_Java;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Basic {
@@ -30,6 +31,7 @@ public class Basic {
         //==================================================================================
 
         //Swap Numbers without using 3rd variables
+        /*
         int x = 5;
         int y = 4;
 
@@ -38,5 +40,37 @@ public class Basic {
         y = x - y; // y = 9 - 4 = < 5 >
         x = x - y; // x = 9 - 5 = < 4 >
         System.out.println(x + " " + y);
+        */
+
+        //==================================================================================
+
+        // Programs to add two numbers ,not for large numbers upto int
+        int number1, number2;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter first large number");
+        number1 = in.nextInt();
+        System.out.println("Enter second large number");
+        number2 = in.nextInt();
+
+        System.out.println(number1 + number2);
+
+        // Program to add two large numbers
+         /*
+        String number1, number2;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter first large number");
+        number1 = in.nextLine();
+        System.out.println("Enter second large number");
+        number2 = in.nextLine();
+
+        System.out.println();
+        BigInteger first = new BigInteger(number1);
+        BigInteger second = new BigInteger(number2);
+        BigInteger sum;
+
+        sum = first.add(second);
+        System.out.println("Result of addition = " + sum);
+        */
+
     }
 }
