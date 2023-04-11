@@ -21,9 +21,9 @@ public class Basic {
         //==================================================================================
 
         //Convert farhneight into celcius
-        /*
-        Scanner sc =new Scanner(System.in);
-        System.out.println("Enter Temperature in fahr");
+
+        Scanner sc = new Scanner(System.in);
+       /* System.out.println("Enter Temperature in fahr");
         int temperature = sc.nextInt();
         temperature=((temperature-32)*5)/9;
         System.out.println("temperture in celcius is "+temperature);
@@ -45,7 +45,7 @@ public class Basic {
         //==================================================================================
 
         // Programs to add two numbers ,not for large numbers upto int
-        int number1, number2;
+       /* int number1, number2;
         Scanner in = new Scanner(System.in);
         System.out.println("Enter first large number");
         number1 = in.nextInt();
@@ -53,7 +53,7 @@ public class Basic {
         number2 = in.nextInt();
 
         System.out.println(number1 + number2);
-
+        */
         // Program to add two large numbers
          /*
         String number1, number2;
@@ -70,6 +70,53 @@ public class Basic {
 
         sum = first.add(second);
         System.out.println("Result of addition = " + sum);
+        */
+
+        //==================================================================================
+
+/*
+        // Program to find factorial of large number
+        int n, c;
+        BigInteger inc = new BigInteger("1");
+        BigInteger fact = new BigInteger("1");
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input an integer");
+        n = input.nextInt();
+        for (c = 1; c <= n; c++) {
+            fact = fact.multiply(inc);
+            inc = inc.add(BigInteger.ONE);
+        }
+        System.out.println(n + "! = " + fact);
+        */
+        //==================================================================================
+        //Comparision of two string
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter first String");
+        String s1 = in.nextLine();
+        System.out.println("Enter second String");
+        String s2 = in.nextLine();
+
+        if (s1.compareTo(s2) > 0) {
+            System.out.println("First string is greater than second ");
+        } else if (s1.compareTo(s2) < 0) {
+            System.out.println("Second string is greater than first");
+        } else {
+            System.out.println("Both strings are equal");
+        }*/
+
+        //==================================================================================
+
+        /*//reverse number
+        int n ,reverse = 0;
+        n = 123;
+        while(n!=0){
+            reverse = reverse *10;
+            reverse = reverse + (n%10);
+            n=n/10;
+
+        }
+        System.out.println("reverse number is "+reverse);
         */
 
     }
