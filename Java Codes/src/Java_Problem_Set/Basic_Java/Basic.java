@@ -2,7 +2,7 @@ package Java_Problem_Set.Basic_Java;
 
 import java.math.BigInteger;
 import java.util.Scanner;
-//star
+]
 public class Basic {
 
     // Command Line Argument in Java is the information that is passed to the program
