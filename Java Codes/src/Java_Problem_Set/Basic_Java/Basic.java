@@ -1,5 +1,5 @@
 package Java_Problem_Set.Basic_Java;
-//st
+//star
 import java.math.BigInteger;
 import java.util.Scanner;
 
