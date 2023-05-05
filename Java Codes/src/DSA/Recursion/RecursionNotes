@@ -2,10 +2,21 @@
 
                               RECURSION
 ========================================================================
+ctrl + alt + insert : To create new java class
+1 . Basic recursion Questions :
+    Fibonacci
+    Factorial , 1 to n , n to 1 product
+    sum of digits (product)
+    Passing Numbers
+    Binary Search
+    Function Call basics
 
-1 . Basic recursion Questions :Fibonacci, Factorial , 1 to n ,n to 1 product ,  sum of digits (product) ,passing
-    Numbers , Binary Search , Function Call basics
-
-2 . Helper Question : Reverse Number (Two ways) , Pallindrome , Count Zeroes using recursion
+2 . Helper Question:
+    Reverse Number (Two ways)
+    Pallindrome
+    Count Zeroes using recursion
 
 3 . Array Questions using Array
+    Sorted Array
+    Linear Search
+
