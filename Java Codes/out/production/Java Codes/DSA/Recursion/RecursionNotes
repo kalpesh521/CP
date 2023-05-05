@@ -18,5 +18,5 @@ ctrl + alt + insert : To create new java class
 
 3 . Array Questions using Array
     Sorted Array
-    Linear Search  ( Find All Index)
+    Linear Search  ( Find All Index) 1. Create static list outside the function 2. pass arraylist as parameter
 
