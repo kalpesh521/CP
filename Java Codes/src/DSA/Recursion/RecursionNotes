@@ -16,9 +16,11 @@ ctrl + alt + insert : To create new java class
     Pallindrome
     Count Zeroes using recursion
 
-3 . Array Questions using Array
+3 . Array Questions using Recursion
     Sorted Array
     Linear Search  ( Find All Index) 1. Create static list outside the function
                                      2. Return list with passing  arraylist as parameter
                                      3. Return list without passing arraylists as parameter
+    Rotated Binary Search
+
 
