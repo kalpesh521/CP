@@ -24,6 +24,11 @@ ctrl + alt + insert : To create new java class
     Rotated Binary Search
 
 4.  String Question using Recursion
-    Add others character of string by skiping 'a' skip Character
-    Return String ,skip character
-    Return String ,skip String
+        Add others character of string by skiping 'a' skip Character
+        Return String ,skip character
+        Return String ,skip String
+    Subsequence Problems
+        Print subsets using Recursion calls
+        Print subsets , Add in arraylist by add in function
+        Print Ascii Values with subsets
+
