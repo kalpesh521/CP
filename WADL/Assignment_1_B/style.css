@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(221, 221, 221);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#registrationForm{
+    display: flex;
+     flex-direction: column;
+     width: 20%;
+     border: 0.5rem outset pink;
+     background-color:  white;
+     border-radius: 12px;
+     font: bold 1rem sans-serif;
+     margin: 2rem;
+     padding: 25px;
+     outline-offset: 0.5rem;
+}
+.dataContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: fit-content;
+    height: fit-content;
+    width: 100%;
+}
+
+#reg {
+    padding: 20px 90px;
+    background-color: rgb(189, 189, 189);
+    border-radius: 10px;
+    margin-bottom: -10px;   
+}
+#user {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-bottom: 40px;
+  }
+.twoInOne {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    font-size: medium;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"] {
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    margin-top: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border: none;
+    outline: none;
+}
+
+input[type="number"],
+input[type="date"] {
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding-left: 10px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    height: 40px;
+    width: 104%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#submit {
+    background-color: rgb(17, 150, 0);
+}
+
+#submit:hover {
+    background-color: rgb(52, 192, 34)
+}
+
+#reset {
+    background-color: rgb(235, 0, 0);
+}
+
+#reset:hover {
+    background-color: rgb(250, 24, 24);
+}

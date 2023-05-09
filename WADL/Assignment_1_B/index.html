@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link href="style.css" rel="stylesheet">
+   </head>
+   <body>
+    <h1 id="reg">USER REGISTRATION FORM</h1>
+      <form id="registrationForm" style="display: flex; flex-direction: column; width: 28%;">
+         <img id ="user" src="user.png" alt="Paris" class="center">
+         <div class="twoInOne">
+            <div class="dataContainer" style="width: 45%;">
+               <label>First Name :</label>
+               <input id="firstName" name="firstName" type="text">
+            </div>
+            <div class="dataContainer" style="width: 45%">
+               <label>Last Name :</label>
+               <input id="lastName" name="lastName" type="text">
+            </div>
+         </div>
+         <div class="dataContainer">
+            <label>Email :</label>
+            <input id="email" name="email" type="email">
+         </div>
+         <div class="dataContainer">
+            <label>Phone no. :</label>
+            <input id="phone" name="phone" type="number">
+         </div>
+         <div class="twoInOne">
+            <div class="dataContainer" style="width: 45%">
+               <label>Age :</label>
+               <input id="age" name="age" type="number">
+            </div>
+            <div class="dataContainer" style="width: 45%">
+               <label>Date of Birth :</label>
+               <input id="dob" name="dob" type="date">
+            </div>
+         </div>
+         <div class="twoInOne">
+            <div class="dataContainer" style="width: 45%">
+               <label>City :</label>
+               <input id="city" name="city" type="text">
+            </div>
+            <div class="dataContainer" style="width: 45%">
+               <label>Pincode :</label>
+               <input id="pincode" name="pincode" type="number">
+            </div>
+         </div>
+         <div class="dataContainer">
+            <label>State :</label>
+            <input id="state" name="state" type="text">
+         </div>
+         <div class="dataContainer" style="margin-top: 20px;">
+            <input type="submit" id="submit"></button>
+            <input type="reset" id="reset"></button>
+         </div>
+      </form>
+      <script>
+         // Created local storage to store the data
+         let users = JSON.parse(localStorage.getItem("users")) || [];
+
+         // created event listener to submit the form
+         document.getElementById("registrationForm").addEventListener("submit", function(event) {
+         event.preventDefault();
+         let formData = new FormData(event.target);
+
+         // created a post request to post the data
+         let xhr = new XMLHttpRequest();
+         xhr.open("POST", "https://jsonplaceholder.typicode.com/users");
+         xhr.setRequestHeader("Content-type", "application/json");
+         xhr.send(JSON.stringify({
+         firstName: formData.get("firstName"),
+         lastName: formData.get("lastName"),
+         email: formData.get("email"),
+         phone: formData.get("phone"),
+         age: formData.get("age"),
+         dob: formData.get("dob"),
+         city: formData.get("city"),
+         pincode: formData.get("pincode"),
+         state: formData.get("state")
+         }));
+
+         // On load of the request, the data is stored in the local storage 
+         // and the user is redirected to the data.html page
+         xhr.onload = function() {
+         users.push(JSON.parse(xhr.response));
+         localStorage.setItem("users", JSON.stringify(users));
+         window.location.href = "/data.html";
+         };
+         });
+      </script>
+   </body>
+</html>
