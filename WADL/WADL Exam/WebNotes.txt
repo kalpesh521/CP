@@ -26,3 +26,4 @@ npm uninstall -g create-react-app  //If React error occurs
 cd kp-react  //move to
 npm start 
 http://localhost:3000/ 
+
