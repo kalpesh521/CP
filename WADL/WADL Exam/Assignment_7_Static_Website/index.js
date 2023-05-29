@@ -1,6 +1,6 @@
 var http = require("http"); // Import Node.js core module
-var fs = require("fs"); 
-var path = require("path"); 
+var fs = require("fs");  // Import the fs module to read and serve our HTML file
+var path = require("path");  // Import the path module to easily serve our HTML file 
 
 http.createServer(function (req, res) { // create web server
     if (req.url === "/") { // check the URL of the current request
