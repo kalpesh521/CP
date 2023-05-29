@@ -5,8 +5,8 @@ var firebaseConfig = {
   storageBucket: "authentication-system-e19c1.appspot.com",
   messagingSenderId: "803376058439",
   appId: "1:803376058439:web:5b53984dcc001b2506a162",
-  measurementId: "G-T470S9GSJN"
 };
+
 var app = firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore(app);
 
@@ -39,7 +39,6 @@ function googleLogin() {
       });
 }
   
-
 function signup() {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
