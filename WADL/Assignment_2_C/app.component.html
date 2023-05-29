@@ -1,0 +1,48 @@
+<h1 id="reg">{{ title }}</h1>
+<div
+  id="registrationForm"
+  style="display: flex; flex-direction: column; width: 28%"
+>
+  <div class="dataContainer"  >
+    <label>Name :</label>
+    <input id="name" name="name" type="text" />
+  </div>
+
+  <div class="dataContainer">
+    <label>Email :</label>
+    <input id="email" name="email" type="email" />
+  </div>
+  <div class="dataContainer">
+    <label>Password:</label>
+    <input id="password" name="password" type="password" />
+  </div>
+  <div class="dataContainer">
+    <label>Phone no. :</label>
+    <input id="phone" name="phone" type="number" />
+  </div>
+  <div class="twoInOne">
+    <div class="dataContainer" style="width: 45%">
+      <label>Age :</label>
+      <input id="age" name="age" type="number" />
+    </div>
+    <div class="dataContainer" style="width: 45%">
+      <label>Date of Birth :</label>
+      <input id="dob" name="dob" type="date" />
+    </div>
+  </div>
+  <div class="dataContainer" >
+    <label>Address :</label>
+    <input id="address" name="address" type="text" />
+  </div>
+
+  <button id="btn" (click)="getValue()"> Submit </button>
+</div>
+
+<h1>Your Registered Data</h1>
+
+<p>Name: {{name}}</p>
+<p>Email:{{email}}</p>
+<p>Phone no.:{{phone}}</p>
+<p>Age:{{age}}</p>
+<p>Date of Birth:{{dob}}</p>
+<p>address:{{address}}</p>
