@@ -1,13 +1,14 @@
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-const session = require('express-session');
+const express = require('express'); // import express from "express";
+const app = express();  // 
+const bodyParser = require('body-parser'); 
+const session = require('express-session'); 
 
 // Set up middleware
+// bodyParser.urlencoded() parses the text as URL encoded data
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-app.use(session({
-  secret: 'secret-key',
+app.use(bodyParser.json()); // bodyParser.json() parses the text as JSON
+app.use(session({ 
+  secret: 'secret-key', // used to sign the session ID cookie
   resave: false,
   saveUninitialized: false
 }));
@@ -45,14 +46,14 @@ app.post('/register', (req, res) => {
       const newUser = { id: users.length + 1, username, password };
       users.push(newUser);
       req.session.isAuthenticated = true;
-      res.redirect('/dashboard');
+      res.redirect('/dashboard'); // Redirect to the dashboard page
     }
   });
   
 
 // Login route
 app.get('/login', (req, res) => {
-  res.sendFile(__dirname + '/login.html');
+  res.sendFile(__dirname + '/login.html'); 
 });
 
 // Handle login form submission
