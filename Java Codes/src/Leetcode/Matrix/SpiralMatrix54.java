@@ -2,7 +2,7 @@ package Leetcode.Matrix;
 
 import java.util.ArrayList;
 import java.util.List;
-//Spiral Matrix 2 solve
+//Spiral Matrix 2 solved
 public class SpiralMatrix54 {
     public List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> ans = new ArrayList<>();
