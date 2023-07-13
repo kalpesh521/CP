@@ -8,6 +8,7 @@ public class Sting {
         String str1= new String(c,2,3); //char
         String str2= new String(b,1,2); //byte
         String str3= new String(str2);  //string
+
         System.out.println(str1);
         System.out.println(str2);
         System.out.println(str3);
