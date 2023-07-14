@@ -38,7 +38,8 @@ public class MultiplicationMatrix {
         for (int i = 0; i < prod.length; i++) {
             for (int j = 0; j < prod[0].length; j++) {
                 for (int k = 0; k < r2; k++) {
-                    prod[i][j] += one[i][k] * two[k][j];
+                    prod[i][j] += one[i][k] * two[k][j];    // C[0][0]=A(0,0)*B(0,0)+A(0,1)*B(1,0)+A(0,2)*B(2,0)
+                                                            // C[0][0]=A(0,1)*B(1,1)+A(0,2)*B(2,1)+A(0,3)*B(3,1)
                 }
             }
         }
