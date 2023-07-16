@@ -3,7 +3,8 @@ package CollectionFramework;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
-
+// Implemented on Binary Search Tree (Heap)
+// Set priority
 public class PriorityQueueCode {
     public static void main(String[] args) {
         Queue<Integer> pq=new PriorityQueue();
@@ -12,9 +13,9 @@ public class PriorityQueueCode {
         pq.offer(13);
         pq.offer(43);
 
-        //Print min-heap
+        // Print min-heap
         System.out.println(pq);
-
+        // We use comparator to change priority from min-heap to max-heap
         Queue<Integer> pq2=new PriorityQueue<>(Comparator.reverseOrder());
         pq2.offer(12);
         pq2.offer(32);
