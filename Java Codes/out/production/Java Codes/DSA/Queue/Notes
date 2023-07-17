@@ -1,0 +1,8 @@
+
+
+-> Stack is internally as array
+-> Stack and queue are used in dfs , bfs  and while converting recursion to iteration
+
+-> Deque
+
+-> ArrayDeque - Faster than Stack and Linkedlist(queue)
