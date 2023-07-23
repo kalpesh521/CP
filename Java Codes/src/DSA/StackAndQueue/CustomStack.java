@@ -1,4 +1,4 @@
-package DSA.Stack;
+package DSA.StackAndQueue;
 
 public class CustomStack {
     int ptr = -1;
@@ -29,12 +29,14 @@ public class CustomStack {
         }
         return data[ptr--];
     }
-  public int peek() throws Exception {
-      if (isEmpty()) {
-          throw new Exception("Cannot  peek from empty stack");
-      }
+
+    public int peek() throws Exception {
+        if (isEmpty()) {
+            throw new Exception("Cannot  peek from empty stack");
+        }
         return data[ptr];
-  }
+    }
+
     public boolean isFull() {
         return ptr == data.length - 1;
 

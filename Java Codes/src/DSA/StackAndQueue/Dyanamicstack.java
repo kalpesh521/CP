@@ -1,4 +1,4 @@
-package DSA.Stack;
+package DSA.StackAndQueue;
 
 public class Dyanamicstack extends CustomStack {
     Dyanamicstack dst = new Dyanamicstack();
