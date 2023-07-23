@@ -9,11 +9,17 @@ public class QueueMain {
         queue.insert(2);
         queue.insert(6);
         queue.display();
-        queue.remove();
+        queue.remove(); // O(n)
         queue.display();
-        System.out.println("Element at Front :");
+        System.out.print("Element at Front : ");
         int front=queue.front();
-        System.out.println(front);
+        System.out.print(front);
+
+        System.out.println();
+
+        System.out.print("Element at Rear : ");
+        int rear=queue.rear();
+        System.out.print(rear);
 
     }
 }

@@ -37,6 +37,10 @@ public class CustomQueue {
         return  data[0];
     }
 
+    public int rear(){
+        return data[end];
+    }
+
     public void display(){
         for (int i=0;i<end;i++){
             System.out.print(data[i]+" <-");
@@ -51,4 +55,6 @@ public class CustomQueue {
     private boolean isEmpty() {
         return end == -1;
     }
+
+
 }
