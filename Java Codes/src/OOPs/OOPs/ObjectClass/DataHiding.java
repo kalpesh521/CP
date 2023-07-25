@@ -1,5 +1,5 @@
 package OOPs.OOPs.ObjectClass;
-
+//Data hiding
 public class DataHiding {
 
     private double length;//Can't access private properties , we need getter and setter method
