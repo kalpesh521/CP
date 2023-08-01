@@ -45,7 +45,7 @@ class MyArray<T extends Number> {  // Here , we can extend class A as well as in
 
 public class GenericArray {
 
-
+// Generic
     public static void main(String[] args) {
 //      My <Integer> m = new My<>();//Only Integer
         My m = new My<>(); // If no parameter passed i t will passed as a object
