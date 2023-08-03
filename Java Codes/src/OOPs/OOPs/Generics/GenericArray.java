@@ -1,5 +1,5 @@
 package OOPs.OOPs.Generics;
-
+// Generic
 class My<T> {
     T A[] = (T[]) new Object[10];
     int length = 0;
