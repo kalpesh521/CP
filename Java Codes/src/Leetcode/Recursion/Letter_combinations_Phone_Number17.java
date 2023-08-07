@@ -19,7 +19,6 @@ public class Letter_combinations_Phone_Number17 {
             pad(p + ch, up.substring(1));
         }
     }
-
     static ArrayList<String> padret(String p, String up) {
         if (up.isEmpty()) {
             ArrayList<String> list =new ArrayList<>();
@@ -36,5 +35,6 @@ public class Letter_combinations_Phone_Number17 {
         }
         return  list;
     }
+
 
 }
