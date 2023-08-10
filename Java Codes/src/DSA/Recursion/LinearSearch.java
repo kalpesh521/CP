@@ -46,7 +46,6 @@ public class LinearSearch {
         }
         if (arr[i] == target) {
             list2.add(i);
-
         }
         ArrayList<Integer> addAllBellowCalls = searchAll2(arr, target, i + 1);
         list2.addAll(addAllBellowCalls);
@@ -55,7 +54,7 @@ public class LinearSearch {
 
     public static void main(String[] args) {
         int arr[] = {2, 3, 4, 4, 5, 1};
-        int arr2[] = {13, 14, 14, 5, 1};
+        int arr2[] = {13, 14, 14,14, 5, 1};
         int arr3[] = {11,11,12, 13, 14, 14, 5, 1};
         System.out.println(search(arr, 7, 0));
 

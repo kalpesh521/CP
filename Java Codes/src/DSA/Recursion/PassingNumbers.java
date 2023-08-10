@@ -10,7 +10,7 @@ public class PassingNumbers {
             return;
         }
         System.out.println(n);
-//        return fun(n--);
+//           fun(n--);
         fun(--n);
     }
 }

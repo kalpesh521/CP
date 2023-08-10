@@ -4,8 +4,9 @@ import java.util.ArrayList;
 
 public class Permutation {
     public static void main(String[] args) {
-        permutation("", "abc");
+        permutation("", "abcd");
 
+        System.out.println();
         System.out.println(permutation2("", "abcd"));
 
         System.out.println(permutationCount("", "abcd"));//4! =24
@@ -13,7 +14,7 @@ public class Permutation {
 
     static void permutation(String p, String up) {
         if (up.isEmpty()) {
-            System.out.println(p);
+            System.out.print(p+" ");
             return;
         }
 

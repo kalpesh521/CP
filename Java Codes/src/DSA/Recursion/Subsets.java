@@ -4,10 +4,14 @@ import java.util.ArrayList;
 
 public class Subsets {
     public static void main(String[] args) {
+
+        // Print all subsets
         subseq("", "abc");
+
+        // Print subsets with ASCII Values
         System.out.println("================ Ascii Values =================");
         subseqAscii("", "abc");
-
+        // Print subsets with Arraylist
         ArrayList<String >res = subset("","abcd");
         System.out.println(res);
     }
