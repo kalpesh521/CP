@@ -11,7 +11,7 @@ public class Permutation {
 
         System.out.println(permutationCount("", "abcd"));//4! =24
     }
-    //
+
     static void permutation(String p, String up) {
         if (up.isEmpty()) {
             System.out.print(p+" ");
