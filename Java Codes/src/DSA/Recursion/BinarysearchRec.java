@@ -2,7 +2,7 @@ package DSA.Recursion;
 
 
 public class BinarysearchRec {
-    public static void main(String[] args) {//
+    public static void main(String[] args) {
         int[] arr = {2, 4, 6, 88, 99};
         int target = 6;
         System.out.println(search(arr, target, 0, arr.length - 1));
