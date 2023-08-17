@@ -1,5 +1,7 @@
 package DSA.Array;
 import java.util.*;
+
+//
 public class Main {
     static final int N = 314514;
     static List<Integer>[] g = new List[N];
