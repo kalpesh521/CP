@@ -1,0 +1,6 @@
+
+ARRAYS DSA NOTES
+
+* Using Kadane's Algorithm Approach
+      1. MaxSum of Subarray using currSum and Maxsum
+      2. MaxProduct of Subarray using Prefix And Suffix

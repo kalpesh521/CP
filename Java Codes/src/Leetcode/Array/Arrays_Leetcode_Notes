@@ -1,0 +1,8 @@
+
+ARRAYS LEETCODE NOTES
+
+53  MaxSubArray MaxSum
+    1. Brute : Using Loop n^3
+    2. Better : start from i , store sum in maxsum , n^2
+    3. Optimal : Using Kadanes Algorithm
+    4. Pollow-up Question : Print Subarray  having maxSum
