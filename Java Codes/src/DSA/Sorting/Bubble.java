@@ -4,7 +4,7 @@ public class Bubble {
 
     static void bubble(int arr[]) {
         int n = arr.length;
-
+        int count =0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i - 1; j++) {
 
@@ -13,8 +13,10 @@ public class Bubble {
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                 }
+                count++;
             }
         }
+        System.out.println(count);
 
 
     }
