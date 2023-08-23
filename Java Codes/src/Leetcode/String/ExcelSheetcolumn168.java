@@ -14,12 +14,13 @@ public class ExcelSheetcolumn168 {
                 c.append((char) ('A' + n % 26 - 1));
             }
             n /= 26;
-
         }
         return c.reverse().toString();
     }
 
     public static void main(String[] args) {
         System.out.println(convertToTitle(28));
+
     }
+
 }
