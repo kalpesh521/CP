@@ -1,7 +1,6 @@
 package Leetcode.Array;
 //
 public class SetMatrixZeroes75 {
-
         public void setZeroes(int[][] matrix) {
             boolean fr = false,fc = false;
             for(int i = 0; i < matrix.length; i++) {
@@ -31,4 +30,5 @@ public class SetMatrixZeroes75 {
                 }
             }
         }
+
 }
