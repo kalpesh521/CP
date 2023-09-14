@@ -1,3 +1,5 @@
+package DSA.Array;
+
 import java.rmi.dgc.Lease;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,6 +27,7 @@ public class Arraylist {
         // System.out.println(list.get(i));
         // }
 
+        // Input Multidimensional Arraylist
         // Multi dimensional ArrayList
         ArrayList<ArrayList<Integer>> lst = new ArrayList<>();
         for (int i = 0; i < 3; i++) {
@@ -36,7 +39,7 @@ public class Arraylist {
                 lst.get(i).add(in.nextInt());
             }
         }
-        System.out.println(lst);
+        System.out.println("This is new List "+lst);
 
         // Swap Array Index
         int[] arr = { 4, 7, 3, 1, 9 };

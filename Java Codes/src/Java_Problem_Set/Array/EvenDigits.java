@@ -1,3 +1,5 @@
+package Java_Problem_Set.Array;
+
 public class EvenDigits {
     public static void main(String[] args) {
         int[] num = { 23, 2, 1, 223, 13232, 2222,22 };

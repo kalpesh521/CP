@@ -1,6 +1,22 @@
 
 ARRAYS DSA NOTES
 
+Array
+    Array Declartaion
+    Min Function
+    For Each Loop
+
+Array 2D
+    Array 2 D
+    Jagged Array (Cintain Diiferent Numbers Of Array)
+
+Matrix
+    Addition
+    Multiplication
+
+
+
+
 * Using Kadane's Algorithm Approach
       1. MaxSum of Subarray using currSum and Maxsum
       2. MaxProduct of Subarray using Prefix And Suffix

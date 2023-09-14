@@ -1,4 +1,4 @@
-package Java_Problem_Set.Array.Array;
+package Java_Problem_Set.Array;
 
 import java.util.Scanner;
 // Delete elements from an array

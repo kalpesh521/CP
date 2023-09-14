@@ -1,4 +1,4 @@
-package Java_Problem_Set.Array.Array;
+package Java_Problem_Set.Array;
 
 import java.util.*;
 
@@ -20,7 +20,7 @@ public class DuplicateUnsortedArray {
         st.forEach((ele) -> System.out.print(ele + " "));
         //==================================================
 
-        System.out.println("\nusing sorting then traverse");
+        System.out.println("\n using sorting then traverse");
         //Time complexity -> O[log(n)]
         Arrays.sort(arr);
         for (int i =0;i<len-1;i++){

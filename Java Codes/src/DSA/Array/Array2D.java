@@ -1,4 +1,4 @@
-//Multidimensional arrays
+package DSA.Array;//Multidimensional arrays
 
 public class Array2D {
 

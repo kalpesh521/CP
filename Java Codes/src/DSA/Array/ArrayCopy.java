@@ -1,3 +1,5 @@
+package DSA.Array;
+
 import java.util.Arrays;
 
 public class ArrayCopy {

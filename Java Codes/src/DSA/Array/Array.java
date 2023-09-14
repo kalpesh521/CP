@@ -1,4 +1,4 @@
-
+package DSA.Array;
 // Array and multi-dimensional array
 import java.util.Arrays;
 import java.util.Scanner;

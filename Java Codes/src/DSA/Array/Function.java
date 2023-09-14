@@ -1,3 +1,5 @@
+package DSA.Array;
+
 public class Function {
 
     static int fun_sum(int a,int b) {
