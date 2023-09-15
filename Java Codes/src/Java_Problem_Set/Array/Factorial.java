@@ -1,3 +1,5 @@
+package Java_Problem_Set.Array;
+
 class Factorial {
         //  factorial java program 
         public static void main(String args[]) {

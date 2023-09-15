@@ -18,14 +18,13 @@ public class RotateArray {
         reverse(0, len - k - 1, arr);
         reverse(len - k, len - 1, arr);
         reverse(0, len - 1, arr);
-
-
     }
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 8, 9, 10};
         int k = 3;
-        rotate(arr, k);
+        rotate(arr, k);  //8 9 10 1 2 3
+
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]+" ");
         }

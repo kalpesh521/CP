@@ -5,6 +5,8 @@ Array
     Array Declartaion
     Min Function
     For Each Loop
+    Input using Scanner Class
+    Ternary Operator
 
 Array 2D
     Array 2 D
@@ -14,8 +16,13 @@ Matrix
     Addition
     Multiplication
 
+ArrayList
+    Input Multidimensional Arraylist
+    swap Array
+    Max Value in Array
 
-
+* Reverse Array
+* Permutation
 
 * Using Kadane's Algorithm Approach
       1. MaxSum of Subarray using currSum and Maxsum

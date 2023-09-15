@@ -18,7 +18,6 @@ public class EvenDigits {
             }
         }
         return count;
-
     }
 
     // Function to check number even or odd
@@ -26,7 +25,6 @@ public class EvenDigits {
         int numOfdigits = digits(num);
         return (numOfdigits % 2) == 0;
     }
-
 
 
     // Another Function to count number of digits

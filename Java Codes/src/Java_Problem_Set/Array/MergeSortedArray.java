@@ -1,4 +1,4 @@
-package Java_Problem_Set.Array.Array;
+package Java_Problem_Set.Array;
 
 public class MergeSortedArray {
 
@@ -28,7 +28,7 @@ public class MergeSortedArray {
     public static void main(String[] args) {
    int[] arr1={2,3,6,7,8};
    int[] arr2={1,4,6,7,9};
-   int [] result= Merge(arr1,arr2);
+   int [] result= Merge(arr1,arr2);//1 2 3 4 6 6 7 7 8 9
    for(int k=0;k<result.length;k++){
        System.out.print(result[k]+ " ");
    }

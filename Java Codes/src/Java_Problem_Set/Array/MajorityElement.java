@@ -25,4 +25,7 @@ public class MajorityElement {
         int[] arr = {1, 1, 5, 5, 5, 1, 1, 1, 5};
         System.out.println(getMajority(arr));
     }
+
+
+
 }

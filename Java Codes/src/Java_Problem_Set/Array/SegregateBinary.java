@@ -15,7 +15,7 @@ public class SegregateBinary {
             arr[j++]=1;
         }
         for(int k=0;k<arr.length;k++){
-            System.out.println(arr[k]+" ");
+            System.out.print(arr[k]+" ");
         }
     }
 }
