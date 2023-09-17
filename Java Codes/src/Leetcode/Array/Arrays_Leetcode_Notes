@@ -6,3 +6,7 @@ ARRAYS LEETCODE NOTES
     2. Better : start from i , store sum in maxsum , n^2
     3. Optimal : Using Kadanes Algorithm
     4. Pollow-up Question : Print Subarray  having maxSum
+
+128 Longest Consecutive Subsequence
+    1.Better : Sort
+    2.Optimal Using Set
