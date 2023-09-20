@@ -18,7 +18,7 @@ public class FirstNonrepeatedCharacter {
                 map.put(ch, 1);
             }
         }
-        System.out.println(map);
+        System.out.println("Map is "+ map);
 
         for (Map.Entry<Character, Integer> entryset : map.entrySet()) {
             if (entryset.getValue() == 1) {
