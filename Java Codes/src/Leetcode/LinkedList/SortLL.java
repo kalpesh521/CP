@@ -7,7 +7,6 @@ public class SortLL {
         if (head == null || head.next == null) {
             return head;
         }
-
         ListNode mid =getMid(head);
         ListNode left =  sortlist(head);
         ListNode right = sortlist(mid);
