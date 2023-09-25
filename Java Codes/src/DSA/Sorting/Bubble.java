@@ -1,5 +1,5 @@
 package DSA.Sorting;
-
+//
 public class Bubble {
 
     static void bubble(int arr[]) {
@@ -31,6 +31,7 @@ public class Bubble {
     public static void main(String[] args) {
         int arr[] = {3, 2, 3, 7, 5, 1};
         bubble(arr);
+        System.out.println("Print Array");
         printArray(arr);
     }
 }
