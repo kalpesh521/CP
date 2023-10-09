@@ -12,7 +12,7 @@ public class ReverseEachWord {
         for (String word : words) {
             String revWords = "";
             for (int i = word.length() - 1; i >= 0; i--) {
-                revWords = revWords+ word.charAt(i);
+                revWords = revWords+ word ;
             }
             output = output+revWords + " ";
 

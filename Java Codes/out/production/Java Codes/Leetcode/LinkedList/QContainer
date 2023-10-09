@@ -23,6 +23,14 @@ Types Approach :
 25  ReverseKgroup (reverse k groups)
 GFG ReverseAlternateKGroup (Add skip next k nodes code)
 
+GFG InsertSortedArrayLinkedList prev->NewNode-> Current
+
+
+
+
+
+
+
 -------------------------------------------------------------------------------------
 Notes:
 1. fast-slow pointer Approach :

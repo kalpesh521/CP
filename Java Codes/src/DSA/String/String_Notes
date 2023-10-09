@@ -1,0 +1,16 @@
+
+
+String Methods
+
+indexOf()
+trim();
+toString();
+split(" ");
+replace();
+charAt();
+toCharArray();
+character.toLowercase();
+Substring(start index,end Index);
+
+int x = Integer.parseINT(str);
+String.valueof();

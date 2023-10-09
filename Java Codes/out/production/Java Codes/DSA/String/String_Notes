@@ -1,0 +1,11 @@
+
+
+String Methods
+
+indexOf()
+trim();
+toString();
+split(" ");
+replace();
+charAt();
+toCharArray();
