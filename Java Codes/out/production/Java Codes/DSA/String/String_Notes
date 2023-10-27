@@ -9,3 +9,17 @@ split(" ");
 replace();
 charAt();
 toCharArray();
+character.toLowercase();
+Substring(start index,end Index);
+
+int x = Integer.parseINT(str);
+String.valueof();
+
+// Skip Character fo string
+   while (string1.contains(i + "")) {
+                int itr = string1.indexOf(i);
+                // if char exit we simply remove that char
+                string1 = string1.replace((i + ""), "");
+            }
+
+   arr[s2.charAt(i) - 'a']
